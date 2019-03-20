@@ -9,6 +9,71 @@
     <i>By: Emme Wiederhold, David Huang, and David Lie-Tjauw</i></br></br>
     <b>Link to Repository: <a href="https://github.com/DavLiet/final_project_457">https://github.com/DavLiet/final_project_457</a></b>
     <h2>Project Objectives</h2>
+    <p>Primary Objectives</p>
+    <ul>
+      <li>How has gentrification changed in NYC over time?</li>
+      <li>How can we visualize gentrification in NYC?</li>
+      <li>What are some other metrics that might have been impacted by gentrification?</li>
+    </ul>
+
+    <p>What We Want To Learn</p>
+    <ul>
+      <li>Does gentrification have a positive or negative impact on NYC over time?</li>
+    </ul>
+
+    <p>What we want to accomplish</p>
+    <ul>
+      <li>Mainly, we seek to build a competent visualization that enables people to explore gentrification across different neighborhoods over time in NYC. By doing this, we hope that our work will spark new insight into the ongoing debate over the effects of gentrification on the people of NYC and beyond.</li>
+    </ul>
+
+    <p>Benefits</p>
+    <ul>
+      <li>The debate over gentrification has some people against gentrification while others are for it. Our visualization seeks to inspire additional commentary in this ongoing debate by showing people the different ways in which gentrification may affect residents in gentrified areas</li>
+    </ul>
+
     <h2>Data</h2>
+    <a href="http://app.coredata.nyc/?mlb=false&ntii=&ntr=&mz=14&vtl=https%3A%2F%2Fthefurmancenter.carto.com%2Fu%2Fnyufc%2Fapi%2Fv2%2Fviz%2F691a2b7c-94d7-46ac-ac4d-9a589cb2c6ed%2Fviz.json&mln=false&mlp=true&mlat=40.718&ptsb=&nty=&mb=roadmap&pf=%7B%22subsidies%22%3Atrue%7D&md=map&mlv=false&mlng=-73.996&btl=Borough&atp=properties">CoreData.nyc</a>
+    <ul>
+      <li>Changing Median Price of Homes (2001-2017)</li>
+      <li>Changing Median Household Income (2001-2017)</li>
+      <li>Changing Populations of certain ethnicities (2005-2017)</li>
+      <li>Changing Labor Force (aka those with college degrees) (2005-2017)</li>
+      <li>Changing Price of Rent (2005-2017)</li>
+    </ul>
+
     <h2>Data Processing</h2>
+    <p>Even though most of our data comes from the same source, different pieces of data are found in separate files from each other. Data processing will be implemented by individually parsing the separate files and combining the relevant data into one monolithic data source in order to make it easier for us to work with the data in D3.
+        We are particularly interested in general data that are indicators of gentrification in NYC:
+        Median Prices in Homes throughout time,
+        Median Household Income throughout time,
+        Populations of different ethnicities throughout time,
+        Labor Force Composition (ex. Those with college degrees) throughout time,
+        Price of Rent throughout time.
+    </p>
+
+    <h2>Visualization Design</h2>
+    <p>Must-Have Features:</p>
+    <ul>
+      <li>Interactive map of NYC that visualizes GeoJSON of boroughs, sub-boroughs, or other districts</li>
+      <li>The ability to select the gentrification attribute(s) that you are most interested in</li>
+      <li>Showing how certain attribute(s) have changed over time</li>
+    </ul>
+    <p>Optional Features:</p>
+    <ul>
+      <li>Ability to compare the education attributes of different sub-boroughs/boroughs</li>
+      <li>Include other types of data related to the indirect effects of gentrification</li>
+      <li>Visualize educational data alongside gentrification data</li>
+      <span>Certain features of our datasets are telltale signs of gentrification (e.g. housing prices and income of an area), so it could be useful to show how much these features have changed overtime along with the education data like test scores, graduation rates, etc.</span>
+    </ul>
+
+    <h2>Project Schedule</h2>
+    <ul>
+      <li>March 11: Define target and find viable datasets</li>
+      <li>March 18: Finish project proposal and begin wrangling the data</li>
+      <li>March 30: Working prototype of one visualization on webpage</li>
+      <li>April 8: Finish prototyping all visualizations on webpage</li>
+      <li>April 15: Finish all interactionsand construct presentation</li>
+      <li>April 22: Get feedback and polish webpage</li>
+      <li>April 29: Project due!</li>
+    </ul>
 </body>
