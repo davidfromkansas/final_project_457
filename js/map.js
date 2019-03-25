@@ -14,8 +14,9 @@ Map.prototype.init = function () {
         .defer(d3.json, "../data/data.json")
         .defer(d3.json, "../data/nyc_sub_borough_area.geojson")
         .awaitAll(function (error, results) {
-
-            var gentrificationData = results[0]    // gentrificationData is a dictionary where the key represents the subborough name and the value is the actual data (ex. income, demographics, etc.)
+            // gentrificationData is a dictionary where the key represents the
+            // subborough name and the value is the actual data (ex. income, demographics, etc.)
+            var gentrificationData = results[0]
             var geojson = results[1]
 
             var map = d3.select("#subborough")
@@ -31,7 +32,8 @@ Map.prototype.init = function () {
                 .append("path")
                 .attr("d", path)
                 .attr("fill", "#0fb9b1")
-                .attr("stroke", "#fed330").on("mouseover", function (d) {
+                .attr("stroke", "#fed330")
+                .on("mouseover", function (d) {
                     // Hovering over subborough will display name and console.log the data of subborough
 
                     d3.select(this).attr("fill", "#fed330")
@@ -70,6 +72,3 @@ Map.prototype.init = function () {
 
 
 }
-
-
-
