@@ -1,12 +1,12 @@
-function Map() {
-    var self = this;
-    self.init();
+Map = function(_subBoroughHandler){
+    this.subBoroughHandler = _subBoroughHandler;
+    this.initVis();
 }
 
 
-Map.prototype.init = function () {
+Map.prototype.initVis = function () {
 
-    var self = this;
+    var vis = this;
 
 
 
@@ -34,41 +34,15 @@ Map.prototype.init = function () {
                 .attr("fill", "#0fb9b1")
                 .attr("stroke", "#fed330")
                 .on("mouseover", function (d) {
-                    // Hovering over subborough will display name and console.log the data of subborough
-
                     d3.select(this).attr("fill", "#fed330")
                     var subboroughData = gentrificationData[d.properties.subborough]
                     d3.select("#title").text(d.properties.subborough)
-                    console.log(subboroughData)
                 }).on("mouseout", function () {
                     d3.select(this).attr("fill", "#0fb9b1")
+                }).on("click", function(d) {
+                    var subboroughData = gentrificationData[d.properties.subborough]
+                    $(vis.subBoroughHandler).trigger("subBoroughSelected", subboroughData);
                 });
         });
-
-
-    d3.json("../data/borough_boundaries.geojson", function (geojson) {
-
-        var map = d3.select("#borough")
-
-        var path = d3.geoPath().projection(d3.geoConicConformal()
-            .parallels([33, 45])
-            .rotate([96, -39])
-            .fitSize([960, 500], geojson));
-
-
-        map.selectAll("path")
-            .data(geojson.features)
-            .enter()
-            .append("path")
-            .attr("d", path)
-            .attr("fill", "#0fb9b1")
-            .attr("stroke", "#fed330").on("mouseover", function () {
-                d3.select(this).attr("fill", "#fed330")
-            }).on("mouseout", function () {
-                d3.select(this).attr("fill", "#0fb9b1")
-            });
-    });
-
-
 
 }

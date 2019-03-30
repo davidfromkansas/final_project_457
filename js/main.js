@@ -10,7 +10,16 @@
      * the classes are defined in the respective javascript files.
      */
     function init() {
-        var map = new Map();
+      // quick startup
+      // python -m http.server
+        let subBoroughHandler = {};
+        var map = new Map(subBoroughHandler);
+        var timeline = new Timeline("timeline");
+        $(subBoroughHandler).bind("subBoroughSelected", function(event, subBorough){
+      		// update timeline
+          console.log(subBorough);
+          timeline.subBoroughSelected(subBorough);
+      	});
     }
 
     /**
