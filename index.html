@@ -9,7 +9,14 @@
 <body>
     <div class="row">
       <div class="col">
-        <h1>Side Panel</h1>
+        <h1>Attribute Selector</h1>
+        <div id="attrSelector">
+          <label class="chkbx"><input type="checkbox" name="medianHouseholdIncome" value="0" checked /> Median Household Income</label></br>
+          <label class="chkbx"><input type="checkbox" name="population" value="1" /> Population</label></br>
+          <label class="chkbx"><input type="checkbox" name="povertyRate" value="2" /> Poverty Rate</label></br>
+          <label class="chkbx"><input type="checkbox" name="racialDiversityIndex" value="3" /> Racial Diversity Index</label></br>
+          <label class="chkbx"><input type="checkbox" name="unemploymentRate" value="4" /> Unemployment Rate</label></br>
+        </div>
       </div>
       <div class="col">
         <h1>Sub-Boroughs</h1>
@@ -17,7 +24,7 @@
       </div>
     </div>
 
-    <div id="summary">
+    <!-- <div id="summary"> -->
         <h1 id="title"></h1>
     </div>
     <div>
@@ -30,8 +37,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <script src="js/d3.min.js"></script>
+<script src="js/d3-scale-chromatic.min.js"></script>
 <script src="js/d3-queue/d3-queue.min.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
 <script src="js/map.js"></script>
+<script src="js/attributeSelector.js"></script>
 <script src="js/main.js"></script>

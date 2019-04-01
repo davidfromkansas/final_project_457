@@ -11,6 +11,7 @@
      */
     function init() {
         var map = new Map();
+        var attrSelector = new AttributeSelector(map);
     }
 
     /**

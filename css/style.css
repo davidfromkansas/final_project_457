@@ -1,0 +1,9 @@
+html, body {
+  /* below two lines prevent user from scrolling left and right within the webpage (made it weird) */
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.chkbx {
+  padding: 10px;
+}
