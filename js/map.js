@@ -6,7 +6,7 @@ Map = function(_subBoroughHandler){
 
 Map.prototype.initVis = function () {
 
-    var vis = this;
+    var self = this;
 
     d3.queue()
         .defer(d3.json, "../data/data.json")
@@ -38,36 +38,10 @@ Map.prototype.initVis = function () {
                 }).on("mouseout", function () {
                     d3.select(this).attr("fill", "#0fb9b1")
                 }).on("click", function(d) {
-                    var subboroughData = gentrificationData[d.properties.subborough]
-                    $(vis.subBoroughHandler).trigger("subBoroughSelected", subboroughData);
+                    var subboroughData = self.gentrificationData[d.properties.subborough]
+                    $(self.subBoroughHandler).trigger("subBoroughSelected", subboroughData);
                 });
         });
-
-
-    d3.json("../data/borough_boundaries.geojson", function (geojsonBoro) {
-
-        var map = d3.select("#borough")
-
-        self.geojsonBoro = geojsonBoro;
-
-        var path = d3.geoPath().projection(d3.geoConicConformal()
-            .parallels([33, 45])
-            .rotate([96, -39])
-            .fitSize([960, 500], geojsonBoro));
-
-
-        map.selectAll("path")
-            .data(geojsonBoro.features)
-            .enter()
-            .append("path")
-            .attr("d", path)
-            .attr("fill", "#0fb9b1")
-            .attr("stroke", "#fed330").on("mouseover", function () {
-                d3.select(this).attr("fill", "#fed330")
-            }).on("mouseout", function () {
-                d3.select(this).attr("fill", "#0fb9b1")
-            });
-    });
 }
 
 Map.prototype.updateVis = function(selectedAttributes) {
@@ -93,19 +67,19 @@ Map.prototype.updateVis = function(selectedAttributes) {
         var average = 0;
         var numAttributes = selectedAttributes.length;
         if(selectedAttributes.includes("0")) {
-          average += self.gentrificationData[d.properties.subborough].median_household_income[2005];
+          average += self.gentrificationData[d.properties.subborough].median_household_income[1].income;
         }
         if(selectedAttributes.includes("1")) {
-          average += self.gentrificationData[d.properties.subborough].population[2005];
+          average += self.gentrificationData[d.properties.subborough].population[1].population;
         }
         if(selectedAttributes.includes("2")) {
-          average += self.gentrificationData[d.properties.subborough].poverty_rate[2005];
+          average += self.gentrificationData[d.properties.subborough].poverty_rate[1].poverty_rate;
         }
         if(selectedAttributes.includes("3")) {
-          average += self.gentrificationData[d.properties.subborough].racial_diversity_index[2005];
+          average += self.gentrificationData[d.properties.subborough].racial_diversity_index[1].racial_diversity_index;
         }
         if(selectedAttributes.includes("4")) {
-          average += self.gentrificationData[d.properties.subborough].unemployment_rate[2005];
+          average += self.gentrificationData[d.properties.subborough].unemployment_rate[1].unemployment_rate;
         }
         average = average / numAttributes;
         console.log(average);
@@ -121,7 +95,7 @@ Map.prototype.updateVis = function(selectedAttributes) {
         var subboroughData = self.gentrificationData[d.properties.subborough]
         d3.select("#title").text(d.properties.subborough)
         console.log(subboroughData)
-        console.log(self.lastColor);
+        // console.log(self.lastColor);
       }).on("mouseout", function (d) {
         //reset the color back to how it was before
         d3.select(this).attr("fill", self.lastColor);
