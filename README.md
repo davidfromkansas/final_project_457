@@ -2,6 +2,8 @@
 - After cloning this repo, the main page can be found by opening index.html
 - The process book for our project can be found in the /proposal folder by opening the proposal.html file. Additionally there is a link to our process book at the beginning of the index.html homepage.
 
+- You can see our github pages here: http://www.david-lietjauw.com/final_project_457/ 
+
 Data Sources:
 
 (fine-grain.geojson) http://data.beta.nyc//dataset/0ff93d2d-90ba-457c-9f7e-39e47bf2ac5f/resource/35dd04fb-81b3-479b-a074-a27a37888ce7/download/d085e2f8d0b54d4590b1e7d1f35594c1pediacitiesnycneighborhoods.geojson
