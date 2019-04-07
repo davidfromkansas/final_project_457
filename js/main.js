@@ -13,13 +13,18 @@
       // quick startup
       // python -m http.server
         let subBoroughHandler = {};
+        let attributeHandler = {};
         var map = new Map(subBoroughHandler);
-        var attrSelector = new AttributeSelector(map);
+        var attrSelector = new AttributeSelector(map, attributeHandler);
         var timeline = new Timeline("timeline");
         $(subBoroughHandler).bind("subBoroughSelected", function(event, subBorough){
       		// update timeline
           console.log(subBorough);
           timeline.subBoroughSelected(subBorough);
+      	});
+        $(attributeHandler).bind("attributeSelected", function(event, attr){
+      		// update map and timeline
+          map.updateVis(attr ? attr : []);
       	});
     }
 

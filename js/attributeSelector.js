@@ -1,12 +1,12 @@
-function AttributeSelector(m) {
-    var self = this;
-    self.map = m;
-    self.init();
+function AttributeSelector(map, _attributeHandler) {
+    this.map = map;
+    this.attributeHandler = _attributeHandler;
+    this.init();
 }
 
 
 AttributeSelector.prototype.init = function() {
-    var self = this;
+    var vis = this;
     //by default, the first attribute (median household income) is selected
     var selectedAttributes = ["0"];
 
@@ -22,9 +22,9 @@ AttributeSelector.prototype.init = function() {
             }
           }
         }
-        // console.log("checkbox " + this.value + " is " + this.checked);
-        // console.log(selectedAttributes);
-        self.map.updateVis(selectedAttributes);
+        // vis.map.updateVis(selectedAttributes);
+
+        $(vis.attributeHandler).trigger("attributeSelected", selectedAttributes);
       }
     }
 }
