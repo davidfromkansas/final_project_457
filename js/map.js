@@ -61,7 +61,7 @@ Map.prototype.updateVis = function (selectedAttributes) {
       var average = 0;
       var numAttributes = selectedAttributes.length;
       if (selectedAttributes.includes("0")) {
-        average += vis.gentrificationData[d.properties.subborough].median_household_income[1].income;
+        average += vis.gentrificationData[d.properties.subborough].median_household_income[1].median_household_income;
       }
       if (selectedAttributes.includes("1")) {
         average += vis.gentrificationData[d.properties.subborough].population[1].population;

@@ -22,8 +22,6 @@ AttributeSelector.prototype.init = function() {
             }
           }
         }
-        // vis.map.updateVis(selectedAttributes);
-
         $(vis.attributeHandler).trigger("attributeSelected", selectedAttributes);
       }
     }

@@ -6,8 +6,9 @@
  * @param _handler				-- the handler for node clicks
  */
 
-Timeline = function(_parentElement){
+Timeline = function(_parentElement, _attrEnum){
 	this.parentElement = _parentElement;
+	this.attrEnum = _attrEnum;
   this.initVis();
 }
 
@@ -62,7 +63,7 @@ Timeline.prototype.initVis = function(){
 
 Timeline.prototype.wrangleData = function(){
 	var vis = this;
-	let data = vis.displayData.median_household_income;
+	let data = vis.selectedData[vis.selectedAttr];
 	let timelineData = []
 
 	// TODO: instead of hardcoding selection, update it so that it gets selection
@@ -70,9 +71,9 @@ Timeline.prototype.wrangleData = function(){
 	for(let i = 1; i < data.length-1; i++) {
 		let lineData = {
 			year1: data[i].year,
-			income1: data[i].income,
+			data1: data[i][vis.selectedAttr],
 			year2: data[i+1].year,
-			income2: data[i+1].income,
+			data2: data[i+1][vis.selectedAttr],
 		}
 		timelineData.push(lineData);
 	}
@@ -92,12 +93,9 @@ Timeline.prototype.wrangleData = function(){
 Timeline.prototype.updateVis = function(){
 	var vis = this;
   let data = vis.timelineData;
-	console.log(data);
 
 	var extent = d3.extent(vis.displayData, function(d) {
-		// TODO: instead of d.income, update it so that it gets selection
-		// from the side panel, return d[selection]
-	  return d.income;
+	  return d[vis.selectedAttr];
 	});
 
   vis.y.domain(extent);
@@ -108,19 +106,33 @@ Timeline.prototype.updateVis = function(){
 			.merge(lines)
 			.attr("class", "line")
 			.attr("x1", function(d) {  return vis.x(new Date(d.year1, 0, 1)); })
-			.attr("y1", function(d) { return vis.y(d.income1); })
+			.attr("y1", function(d) { return vis.y(d.data1); })
 			.attr("x2", function(d) { return vis.x(new Date(d.year2, 0, 1)); })
-			.attr("y2", function(d) { return vis.y(d.income2); })
+			.attr("y2", function(d) { return vis.y(d.data2); })
 			.attr("stroke", "black")
 			.attr("stroke-width", 2);
 
 	d3.select(".x-axis").call(vis.xAxis);
 	d3.select(".y-axis").call(vis.yAxis);
-
 }
 
 Timeline.prototype.subBoroughSelected = function(subBorough){
 	var vis = this;
-  vis.displayData = subBorough;
-  vis.wrangleData();
+	if(vis.selectedAttr) {
+		vis.selectedData = subBorough;
+	  vis.wrangleData();
+	} else {
+		alert("Please select an attribute");
+	}
+}
+
+Timeline.prototype.attributeSelected = function(attr){
+	var vis = this;
+	console.log(attr);
+	if(vis.selectedAttr) {
+		vis.selectedAttr = this.attrEnum[attr];
+		vis.wrangleData();
+	} else {
+		vis.selectedAttr = this.attrEnum[attr];
+	}
 }
