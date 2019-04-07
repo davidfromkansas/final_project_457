@@ -3,55 +3,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 101669
+                "median_household_income": 101669
             },
             {
                 "year": 2005,
-                "income": 115100
+                "median_household_income": 115100
             },
             {
                 "year": 2006,
-                "income": 115427
+                "median_household_income": 115427
             },
             {
                 "year": 2007,
-                "income": 121820
+                "median_household_income": 121820
             },
             {
                 "year": 2008,
-                "income": 120389
+                "median_household_income": 120389
             },
             {
                 "year": 2009,
-                "income": 115417
+                "median_household_income": 115417
             },
             {
                 "year": 2010,
-                "income": 113844
+                "median_household_income": 113844
             },
             {
                 "year": 2011,
-                "income": 129931
+                "median_household_income": 129931
             },
             {
                 "year": 2012,
-                "income": 109362
+                "median_household_income": 109362
             },
             {
                 "year": 2013,
-                "income": 131013
+                "median_household_income": 131013
             },
             {
                 "year": 2014,
-                "income": 124018
+                "median_household_income": 124018
             },
             {
                 "year": 2015,
-                "income": 125884
+                "median_household_income": 125884
             },
             {
                 "year": 2016,
-                "income": 139895
+                "median_household_income": 139895
             }
         ],
         "population": [
@@ -491,55 +491,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 42668
+                "median_household_income": 42668
             },
             {
                 "year": 2005,
-                "income": 39690
+                "median_household_income": 39690
             },
             {
                 "year": 2006,
-                "income": 44894
+                "median_household_income": 44894
             },
             {
                 "year": 2007,
-                "income": 37180
+                "median_household_income": 37180
             },
             {
                 "year": 2008,
-                "income": 41611
+                "median_household_income": 41611
             },
             {
                 "year": 2009,
-                "income": 46775
+                "median_household_income": 46775
             },
             {
                 "year": 2010,
-                "income": 47172
+                "median_household_income": 47172
             },
             {
                 "year": 2011,
-                "income": 42450
+                "median_household_income": 42450
             },
             {
                 "year": 2012,
-                "income": 43401
+                "median_household_income": 43401
             },
             {
                 "year": 2013,
-                "income": 41959
+                "median_household_income": 41959
             },
             {
                 "year": 2014,
-                "income": 42683
+                "median_household_income": 42683
             },
             {
                 "year": 2015,
-                "income": 43559
+                "median_household_income": 43559
             },
             {
                 "year": 2016,
-                "income": 42013
+                "median_household_income": 42013
             }
         ],
         "population": [
@@ -979,55 +979,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 80923
+                "median_household_income": 80923
             },
             {
                 "year": 2005,
-                "income": 87400
+                "median_household_income": 87400
             },
             {
                 "year": 2006,
-                "income": 88461
+                "median_household_income": 88461
             },
             {
                 "year": 2007,
-                "income": 92130
+                "median_household_income": 92130
             },
             {
                 "year": 2008,
-                "income": 90348
+                "median_household_income": 90348
             },
             {
                 "year": 2009,
-                "income": 92710
+                "median_household_income": 92710
             },
             {
                 "year": 2010,
-                "income": 86783
+                "median_household_income": 86783
             },
             {
                 "year": 2011,
-                "income": 90002
+                "median_household_income": 90002
             },
             {
                 "year": 2012,
-                "income": 91717
+                "median_household_income": 91717
             },
             {
                 "year": 2013,
-                "income": 105214
+                "median_household_income": 105214
             },
             {
                 "year": 2014,
-                "income": 101700
+                "median_household_income": 101700
             },
             {
                 "year": 2015,
-                "income": 105401
+                "median_household_income": 105401
             },
             {
                 "year": 2016,
-                "income": 103537
+                "median_household_income": 103537
             }
         ],
         "population": [
@@ -1467,55 +1467,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 100051
+                "median_household_income": 100051
             },
             {
                 "year": 2005,
-                "income": 106650
+                "median_household_income": 106650
             },
             {
                 "year": 2006,
-                "income": 109152
+                "median_household_income": 109152
             },
             {
                 "year": 2007,
-                "income": 112480
+                "median_household_income": 112480
             },
             {
                 "year": 2008,
-                "income": 122805
+                "median_household_income": 122805
             },
             {
                 "year": 2009,
-                "income": 111910
+                "median_household_income": 111910
             },
             {
                 "year": 2010,
-                "income": 101582
+                "median_household_income": 101582
             },
             {
                 "year": 2011,
-                "income": 110075
+                "median_household_income": 110075
             },
             {
                 "year": 2012,
-                "income": 98260
+                "median_household_income": 98260
             },
             {
                 "year": 2013,
-                "income": 112994
+                "median_household_income": 112994
             },
             {
                 "year": 2014,
-                "income": 108989
+                "median_household_income": 108989
             },
             {
                 "year": 2015,
-                "income": 110117
+                "median_household_income": 110117
             },
             {
                 "year": 2016,
-                "income": 112561
+                "median_household_income": 112561
             }
         ],
         "population": [
@@ -1955,55 +1955,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 97108
+                "median_household_income": 97108
             },
             {
                 "year": 2005,
-                "income": 104140
+                "median_household_income": 104140
             },
             {
                 "year": 2006,
-                "income": 110270
+                "median_household_income": 110270
             },
             {
                 "year": 2007,
-                "income": 100740
+                "median_household_income": 100740
             },
             {
                 "year": 2008,
-                "income": 117308
+                "median_household_income": 117308
             },
             {
                 "year": 2009,
-                "income": 119920
+                "median_household_income": 119920
             },
             {
                 "year": 2010,
-                "income": 100334
+                "median_household_income": 100334
             },
             {
                 "year": 2011,
-                "income": 99899
+                "median_household_income": 99899
             },
             {
                 "year": 2012,
-                "income": 97609
+                "median_household_income": 97609
             },
             {
                 "year": 2013,
-                "income": 103790
+                "median_household_income": 103790
             },
             {
                 "year": 2014,
-                "income": 109563
+                "median_household_income": 109563
             },
             {
                 "year": 2015,
-                "income": 104126
+                "median_household_income": 104126
             },
             {
                 "year": 2016,
-                "income": 113447
+                "median_household_income": 113447
             }
         ],
         "population": [
@@ -2443,55 +2443,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 110350
+                "median_household_income": 110350
             },
             {
                 "year": 2005,
-                "income": 102540
+                "median_household_income": 102540
             },
             {
                 "year": 2006,
-                "income": 117095
+                "median_household_income": 117095
             },
             {
                 "year": 2007,
-                "income": 119360
+                "median_household_income": 119360
             },
             {
                 "year": 2008,
-                "income": 125482
+                "median_household_income": 125482
             },
             {
                 "year": 2009,
-                "income": 112041
+                "median_household_income": 112041
             },
             {
                 "year": 2010,
-                "income": 106439
+                "median_household_income": 106439
             },
             {
                 "year": 2011,
-                "income": 114052
+                "median_household_income": 114052
             },
             {
                 "year": 2012,
-                "income": 105589
+                "median_household_income": 105589
             },
             {
                 "year": 2013,
-                "income": 112590
+                "median_household_income": 112590
             },
             {
                 "year": 2014,
-                "income": 118909
+                "median_household_income": 118909
             },
             {
                 "year": 2015,
-                "income": 105583
+                "median_household_income": 105583
             },
             {
                 "year": 2016,
-                "income": 119260
+                "median_household_income": 119260
             }
         ],
         "population": [
@@ -2931,55 +2931,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 44140
+                "median_household_income": 44140
             },
             {
                 "year": 2005,
-                "income": 34630
+                "median_household_income": 34630
             },
             {
                 "year": 2006,
-                "income": 34993
+                "median_household_income": 34993
             },
             {
                 "year": 2007,
-                "income": 48580
+                "median_household_income": 48580
             },
             {
                 "year": 2008,
-                "income": 42789
+                "median_household_income": 42789
             },
             {
                 "year": 2009,
-                "income": 43781
+                "median_household_income": 43781
             },
             {
                 "year": 2010,
-                "income": 41547
+                "median_household_income": 41547
             },
             {
                 "year": 2011,
-                "income": 42801
+                "median_household_income": 42801
             },
             {
                 "year": 2012,
-                "income": 42959
+                "median_household_income": 42959
             },
             {
                 "year": 2013,
-                "income": 47674
+                "median_household_income": 47674
             },
             {
                 "year": 2014,
-                "income": 43580
+                "median_household_income": 43580
             },
             {
                 "year": 2015,
-                "income": 50170
+                "median_household_income": 50170
             },
             {
                 "year": 2016,
-                "income": 49993
+                "median_household_income": 49993
             }
         ],
         "population": [
@@ -3419,55 +3419,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 31486
+                "median_household_income": 31486
             },
             {
                 "year": 2005,
-                "income": 33130
+                "median_household_income": 33130
             },
             {
                 "year": 2006,
-                "income": 32858
+                "median_household_income": 32858
             },
             {
                 "year": 2007,
-                "income": 36240
+                "median_household_income": 36240
             },
             {
                 "year": 2008,
-                "income": 37760
+                "median_household_income": 37760
             },
             {
                 "year": 2009,
-                "income": 35686
+                "median_household_income": 35686
             },
             {
                 "year": 2010,
-                "income": 39392
+                "median_household_income": 39392
             },
             {
                 "year": 2011,
-                "income": 38318
+                "median_household_income": 38318
             },
             {
                 "year": 2012,
-                "income": 39164
+                "median_household_income": 39164
             },
             {
                 "year": 2013,
-                "income": 38596
+                "median_household_income": 38596
             },
             {
                 "year": 2014,
-                "income": 41856
+                "median_household_income": 41856
             },
             {
                 "year": 2015,
-                "income": 47449
+                "median_household_income": 47449
             },
             {
                 "year": 2016,
-                "income": 46537
+                "median_household_income": 46537
             }
         ],
         "population": [
@@ -3907,55 +3907,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 33840
+                "median_household_income": 33840
             },
             {
                 "year": 2005,
-                "income": 33350
+                "median_household_income": 33350
             },
             {
                 "year": 2006,
-                "income": 32864
+                "median_household_income": 32864
             },
             {
                 "year": 2007,
-                "income": 35620
+                "median_household_income": 35620
             },
             {
                 "year": 2008,
-                "income": 34545
+                "median_household_income": 34545
             },
             {
                 "year": 2009,
-                "income": 31716
+                "median_household_income": 31716
             },
             {
                 "year": 2010,
-                "income": 34084
+                "median_household_income": 34084
             },
             {
                 "year": 2011,
-                "income": 33494
+                "median_household_income": 33494
             },
             {
                 "year": 2012,
-                "income": 32972
+                "median_household_income": 32972
             },
             {
                 "year": 2013,
-                "income": 28166
+                "median_household_income": 28166
             },
             {
                 "year": 2014,
-                "income": 32338
+                "median_household_income": 32338
             },
             {
                 "year": 2015,
-                "income": 30977
+                "median_household_income": 30977
             },
             {
                 "year": 2016,
-                "income": 35096
+                "median_household_income": 35096
             }
         ],
         "population": [
@@ -4395,55 +4395,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 44140
+                "median_household_income": 44140
             },
             {
                 "year": 2005,
-                "income": 39340
+                "median_household_income": 39340
             },
             {
                 "year": 2006,
-                "income": 39526
+                "median_household_income": 39526
             },
             {
                 "year": 2007,
-                "income": 41150
+                "median_household_income": 41150
             },
             {
                 "year": 2008,
-                "income": 43138
+                "median_household_income": 43138
             },
             {
                 "year": 2009,
-                "income": 42056
+                "median_household_income": 42056
             },
             {
                 "year": 2010,
-                "income": 45898
+                "median_household_income": 45898
             },
             {
                 "year": 2011,
-                "income": 40736
+                "median_household_income": 40736
             },
             {
                 "year": 2012,
-                "income": 38550
+                "median_household_income": 38550
             },
             {
                 "year": 2013,
-                "income": 39166
+                "median_household_income": 39166
             },
             {
                 "year": 2014,
-                "income": 46595
+                "median_household_income": 46595
             },
             {
                 "year": 2015,
-                "income": 46692
+                "median_household_income": 46692
             },
             {
                 "year": 2016,
-                "income": 53049
+                "median_household_income": 53049
             }
         ],
         "population": [
@@ -4883,55 +4883,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 25748
+                "median_household_income": 25748
             },
             {
                 "year": 2005,
-                "income": 17210
+                "median_household_income": 17210
             },
             {
                 "year": 2006,
-                "income": 21707
+                "median_household_income": 21707
             },
             {
                 "year": 2007,
-                "income": 24170
+                "median_household_income": 24170
             },
             {
                 "year": 2008,
-                "income": 21841
+                "median_household_income": 21841
             },
             {
                 "year": 2009,
-                "income": 21811
+                "median_household_income": 21811
             },
             {
                 "year": 2010,
-                "income": 23237
+                "median_household_income": 23237
             },
             {
                 "year": 2011,
-                "income": 22921
+                "median_household_income": 22921
             },
             {
                 "year": 2012,
-                "income": 20328
+                "median_household_income": 20328
             },
             {
                 "year": 2013,
-                "income": 24133
+                "median_household_income": 24133
             },
             {
                 "year": 2014,
-                "income": 21788
+                "median_household_income": 21788
             },
             {
                 "year": 2015,
-                "income": 25153
+                "median_household_income": 25153
             },
             {
                 "year": 2016,
-                "income": 27846
+                "median_household_income": 27846
             }
         ],
         "population": [
@@ -5371,55 +5371,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 27219
+                "median_household_income": 27219
             },
             {
                 "year": 2005,
-                "income": 23200
+                "median_household_income": 23200
             },
             {
                 "year": 2006,
-                "income": 22445
+                "median_household_income": 22445
             },
             {
                 "year": 2007,
-                "income": 23970
+                "median_household_income": 23970
             },
             {
                 "year": 2008,
-                "income": 23957
+                "median_household_income": 23957
             },
             {
                 "year": 2009,
-                "income": 26567
+                "median_household_income": 26567
             },
             {
                 "year": 2010,
-                "income": 22938
+                "median_household_income": 22938
             },
             {
                 "year": 2011,
-                "income": 24248
+                "median_household_income": 24248
             },
             {
                 "year": 2012,
-                "income": 21885
+                "median_household_income": 21885
             },
             {
                 "year": 2013,
-                "income": 25362
+                "median_household_income": 25362
             },
             {
                 "year": 2014,
-                "income": 22743
+                "median_household_income": 22743
             },
             {
                 "year": 2015,
-                "income": 24783
+                "median_household_income": 24783
             },
             {
                 "year": 2016,
-                "income": 26317
+                "median_household_income": 26317
             }
         ],
         "population": [
@@ -5859,55 +5859,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 33693
+                "median_household_income": 33693
             },
             {
                 "year": 2005,
-                "income": 25710
+                "median_household_income": 25710
             },
             {
                 "year": 2006,
-                "income": 29606
+                "median_household_income": 29606
             },
             {
                 "year": 2007,
-                "income": 28800
+                "median_household_income": 28800
             },
             {
                 "year": 2008,
-                "income": 28208
+                "median_household_income": 28208
             },
             {
                 "year": 2009,
-                "income": 33392
+                "median_household_income": 33392
             },
             {
                 "year": 2010,
-                "income": 29800
+                "median_household_income": 29800
             },
             {
                 "year": 2011,
-                "income": 24767
+                "median_household_income": 24767
             },
             {
                 "year": 2012,
-                "income": 28655
+                "median_household_income": 28655
             },
             {
                 "year": 2013,
-                "income": 27587
+                "median_household_income": 27587
             },
             {
                 "year": 2014,
-                "income": 28069
+                "median_household_income": 28069
             },
             {
                 "year": 2015,
-                "income": 26925
+                "median_household_income": 26925
             },
             {
                 "year": 2016,
-                "income": 32115
+                "median_household_income": 32115
             }
         ],
         "population": [
@@ -6347,55 +6347,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 31619
+                "median_household_income": 31619
             },
             {
                 "year": 2005,
-                "income": 24000
+                "median_household_income": 24000
             },
             {
                 "year": 2006,
-                "income": 24780
+                "median_household_income": 24780
             },
             {
                 "year": 2007,
-                "income": 27990
+                "median_household_income": 27990
             },
             {
                 "year": 2008,
-                "income": 30690
+                "median_household_income": 30690
             },
             {
                 "year": 2009,
-                "income": 27477
+                "median_household_income": 27477
             },
             {
                 "year": 2010,
-                "income": 28597
+                "median_household_income": 28597
             },
             {
                 "year": 2011,
-                "income": 28130
+                "median_household_income": 28130
             },
             {
                 "year": 2012,
-                "income": 22958
+                "median_household_income": 22958
             },
             {
                 "year": 2013,
-                "income": 25364
+                "median_household_income": 25364
             },
             {
                 "year": 2014,
-                "income": 21536
+                "median_household_income": 21536
             },
             {
                 "year": 2015,
-                "income": 24920
+                "median_household_income": 24920
             },
             {
                 "year": 2016,
-                "income": 27136
+                "median_household_income": 27136
             }
         ],
         "population": [
@@ -6835,55 +6835,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 40020
+                "median_household_income": 40020
             },
             {
                 "year": 2005,
-                "income": 36180
+                "median_household_income": 36180
             },
             {
                 "year": 2006,
-                "income": 34391
+                "median_household_income": 34391
             },
             {
                 "year": 2007,
-                "income": 35120
+                "median_household_income": 35120
             },
             {
                 "year": 2008,
-                "income": 35740
+                "median_household_income": 35740
             },
             {
                 "year": 2009,
-                "income": 33364
+                "median_household_income": 33364
             },
             {
                 "year": 2010,
-                "income": 30339
+                "median_household_income": 30339
             },
             {
                 "year": 2011,
-                "income": 33219
+                "median_household_income": 33219
             },
             {
                 "year": 2012,
-                "income": 32451
+                "median_household_income": 32451
             },
             {
                 "year": 2013,
-                "income": 30391
+                "median_household_income": 30391
             },
             {
                 "year": 2014,
-                "income": 36625
+                "median_household_income": 36625
             },
             {
                 "year": 2015,
-                "income": 32914
+                "median_household_income": 32914
             },
             {
                 "year": 2016,
-                "income": 34727
+                "median_household_income": 34727
             }
         ],
         "population": [
@@ -7323,55 +7323,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 61796
+                "median_household_income": 61796
             },
             {
                 "year": 2005,
-                "income": 59850
+                "median_household_income": 59850
             },
             {
                 "year": 2006,
-                "income": 59820
+                "median_household_income": 59820
             },
             {
                 "year": 2007,
-                "income": 59430
+                "median_household_income": 59430
             },
             {
                 "year": 2008,
-                "income": 64496
+                "median_household_income": 64496
             },
             {
                 "year": 2009,
-                "income": 59025
+                "median_household_income": 59025
             },
             {
                 "year": 2010,
-                "income": 55787
+                "median_household_income": 55787
             },
             {
                 "year": 2011,
-                "income": 59747
+                "median_household_income": 59747
             },
             {
                 "year": 2012,
-                "income": 58424
+                "median_household_income": 58424
             },
             {
                 "year": 2013,
-                "income": 63372
+                "median_household_income": 63372
             },
             {
                 "year": 2014,
-                "income": 55951
+                "median_household_income": 55951
             },
             {
                 "year": 2015,
-                "income": 63601
+                "median_household_income": 63601
             },
             {
                 "year": 2016,
-                "income": 59438
+                "median_household_income": 59438
             }
         ],
         "population": [
@@ -7811,55 +7811,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 43110
+                "median_household_income": 43110
             },
             {
                 "year": 2005,
-                "income": 41980
+                "median_household_income": 41980
             },
             {
                 "year": 2006,
-                "income": 42133
+                "median_household_income": 42133
             },
             {
                 "year": 2007,
-                "income": 38950
+                "median_household_income": 38950
             },
             {
                 "year": 2008,
-                "income": 45709
+                "median_household_income": 45709
             },
             {
                 "year": 2009,
-                "income": 38197
+                "median_household_income": 38197
             },
             {
                 "year": 2010,
-                "income": 43800
+                "median_household_income": 43800
             },
             {
                 "year": 2011,
-                "income": 38842
+                "median_household_income": 38842
             },
             {
                 "year": 2012,
-                "income": 35911
+                "median_household_income": 35911
             },
             {
                 "year": 2013,
-                "income": 33835
+                "median_household_income": 33835
             },
             {
                 "year": 2014,
-                "income": 37206
+                "median_household_income": 37206
             },
             {
                 "year": 2015,
-                "income": 37911
+                "median_household_income": 37911
             },
             {
                 "year": 2016,
-                "income": 38189
+                "median_household_income": 38189
             }
         ],
         "population": [
@@ -8299,55 +8299,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 64739
+                "median_household_income": 64739
             },
             {
                 "year": 2005,
-                "income": 54450
+                "median_household_income": 54450
             },
             {
                 "year": 2006,
-                "income": 62996
+                "median_household_income": 62996
             },
             {
                 "year": 2007,
-                "income": 61380
+                "median_household_income": 61380
             },
             {
                 "year": 2008,
-                "income": 66564
+                "median_household_income": 66564
             },
             {
                 "year": 2009,
-                "income": 52623
+                "median_household_income": 52623
             },
             {
                 "year": 2010,
-                "income": 52650
+                "median_household_income": 52650
             },
             {
                 "year": 2011,
-                "income": 57923
+                "median_household_income": 57923
             },
             {
                 "year": 2012,
-                "income": 54570
+                "median_household_income": 54570
             },
             {
                 "year": 2013,
-                "income": 58609
+                "median_household_income": 58609
             },
             {
                 "year": 2014,
-                "income": 56712
+                "median_household_income": 56712
             },
             {
                 "year": 2015,
-                "income": 52414
+                "median_household_income": 52414
             },
             {
                 "year": 2016,
-                "income": 60562
+                "median_household_income": 60562
             }
         ],
         "population": [
@@ -8787,55 +8787,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 51496
+                "median_household_income": 51496
             },
             {
                 "year": 2005,
-                "income": 49800
+                "median_household_income": 49800
             },
             {
                 "year": 2006,
-                "income": 51230
+                "median_household_income": 51230
             },
             {
                 "year": 2007,
-                "income": 51450
+                "median_household_income": 51450
             },
             {
                 "year": 2008,
-                "income": 49634
+                "median_household_income": 49634
             },
             {
                 "year": 2009,
-                "income": 54289
+                "median_household_income": 54289
             },
             {
                 "year": 2010,
-                "income": 48621
+                "median_household_income": 48621
             },
             {
                 "year": 2011,
-                "income": 44166
+                "median_household_income": 44166
             },
             {
                 "year": 2012,
-                "income": 45332
+                "median_household_income": 45332
             },
             {
                 "year": 2013,
-                "income": 45035
+                "median_household_income": 45035
             },
             {
                 "year": 2014,
-                "income": 49436
+                "median_household_income": 49436
             },
             {
                 "year": 2015,
-                "income": 46946
+                "median_household_income": 46946
             },
             {
                 "year": 2016,
-                "income": 51803
+                "median_household_income": 51803
             }
         ],
         "population": [
@@ -9275,55 +9275,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 54439
+                "median_household_income": 54439
             },
             {
                 "year": 2005,
-                "income": 49200
+                "median_household_income": 49200
             },
             {
                 "year": 2006,
-                "income": 55505
+                "median_household_income": 55505
             },
             {
                 "year": 2007,
-                "income": 53940
+                "median_household_income": 53940
             },
             {
                 "year": 2008,
-                "income": 52950
+                "median_household_income": 52950
             },
             {
                 "year": 2009,
-                "income": 52343
+                "median_household_income": 52343
             },
             {
                 "year": 2010,
-                "income": 49023
+                "median_household_income": 49023
             },
             {
                 "year": 2011,
-                "income": 46866
+                "median_household_income": 46866
             },
             {
                 "year": 2012,
-                "income": 43992
+                "median_household_income": 43992
             },
             {
                 "year": 2013,
-                "income": 47709
+                "median_household_income": 47709
             },
             {
                 "year": 2014,
-                "income": 46336
+                "median_household_income": 46336
             },
             {
                 "year": 2015,
-                "income": 48922
+                "median_household_income": 48922
             },
             {
                 "year": 2016,
-                "income": 52386
+                "median_household_income": 52386
             }
         ],
         "population": [
@@ -9763,55 +9763,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 39534
+                "median_household_income": 39534
             },
             {
                 "year": 2005,
-                "income": 37710
+                "median_household_income": 37710
             },
             {
                 "year": 2006,
-                "income": 39307
+                "median_household_income": 39307
             },
             {
                 "year": 2007,
-                "income": 47390
+                "median_household_income": 47390
             },
             {
                 "year": 2008,
-                "income": 46975
+                "median_household_income": 46975
             },
             {
                 "year": 2009,
-                "income": 44482
+                "median_household_income": 44482
             },
             {
                 "year": 2010,
-                "income": 46686
+                "median_household_income": 46686
             },
             {
                 "year": 2011,
-                "income": 50950
+                "median_household_income": 50950
             },
             {
                 "year": 2012,
-                "income": 53470
+                "median_household_income": 53470
             },
             {
                 "year": 2013,
-                "income": 54804
+                "median_household_income": 54804
             },
             {
                 "year": 2014,
-                "income": 59659
+                "median_household_income": 59659
             },
             {
                 "year": 2015,
-                "income": 69157
+                "median_household_income": 69157
             },
             {
                 "year": 2016,
-                "income": 71054
+                "median_household_income": 71054
             }
         ],
         "population": [
@@ -10251,55 +10251,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 60325
+                "median_household_income": 60325
             },
             {
                 "year": 2005,
-                "income": 63290
+                "median_household_income": 63290
             },
             {
                 "year": 2006,
-                "income": 66859
+                "median_household_income": 66859
             },
             {
                 "year": 2007,
-                "income": 74330
+                "median_household_income": 74330
             },
             {
                 "year": 2008,
-                "income": 70814
+                "median_household_income": 70814
             },
             {
                 "year": 2009,
-                "income": 75009
+                "median_household_income": 75009
             },
             {
                 "year": 2010,
-                "income": 80035
+                "median_household_income": 80035
             },
             {
                 "year": 2011,
-                "income": 67255
+                "median_household_income": 67255
             },
             {
                 "year": 2012,
-                "income": 80518
+                "median_household_income": 80518
             },
             {
                 "year": 2013,
-                "income": 79500
+                "median_household_income": 79500
             },
             {
                 "year": 2014,
-                "income": 87262
+                "median_household_income": 87262
             },
             {
                 "year": 2015,
-                "income": 89299
+                "median_household_income": 89299
             },
             {
                 "year": 2016,
-                "income": 88689
+                "median_household_income": 88689
             }
         ],
         "population": [
@@ -10739,55 +10739,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 33546
+                "median_household_income": 33546
             },
             {
                 "year": 2005,
-                "income": 38140
+                "median_household_income": 38140
             },
             {
                 "year": 2006,
-                "income": 33577
+                "median_household_income": 33577
             },
             {
                 "year": 2007,
-                "income": 36390
+                "median_household_income": 36390
             },
             {
                 "year": 2008,
-                "income": 43958
+                "median_household_income": 43958
             },
             {
                 "year": 2009,
-                "income": 34195
+                "median_household_income": 34195
             },
             {
                 "year": 2010,
-                "income": 41231
+                "median_household_income": 41231
             },
             {
                 "year": 2011,
-                "income": 35049
+                "median_household_income": 35049
             },
             {
                 "year": 2012,
-                "income": 40505
+                "median_household_income": 40505
             },
             {
                 "year": 2013,
-                "income": 38887
+                "median_household_income": 38887
             },
             {
                 "year": 2014,
-                "income": 35782
+                "median_household_income": 35782
             },
             {
                 "year": 2015,
-                "income": 40752
+                "median_household_income": 40752
             },
             {
                 "year": 2016,
-                "income": 52441
+                "median_household_income": 52441
             }
         ],
         "population": [
@@ -11227,55 +11227,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 33840
+                "median_household_income": 33840
             },
             {
                 "year": 2005,
-                "income": 31590
+                "median_household_income": 31590
             },
             {
                 "year": 2006,
-                "income": 33886
+                "median_household_income": 33886
             },
             {
                 "year": 2007,
-                "income": 36590
+                "median_household_income": 36590
             },
             {
                 "year": 2008,
-                "income": 41048
+                "median_household_income": 41048
             },
             {
                 "year": 2009,
-                "income": 36033
+                "median_household_income": 36033
             },
             {
                 "year": 2010,
-                "income": 41304
+                "median_household_income": 41304
             },
             {
                 "year": 2011,
-                "income": 37009
+                "median_household_income": 37009
             },
             {
                 "year": 2012,
-                "income": 37236
+                "median_household_income": 37236
             },
             {
                 "year": 2013,
-                "income": 45326
+                "median_household_income": 45326
             },
             {
                 "year": 2014,
-                "income": 41773
+                "median_household_income": 41773
             },
             {
                 "year": 2015,
-                "income": 44512
+                "median_household_income": 44512
             },
             {
                 "year": 2016,
-                "income": 49377
+                "median_household_income": 49377
             }
         ],
         "population": [
@@ -11715,55 +11715,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 40314
+                "median_household_income": 40314
             },
             {
                 "year": 2005,
-                "income": 38230
+                "median_household_income": 38230
             },
             {
                 "year": 2006,
-                "income": 34148
+                "median_household_income": 34148
             },
             {
                 "year": 2007,
-                "income": 37570
+                "median_household_income": 37570
             },
             {
                 "year": 2008,
-                "income": 40978
+                "median_household_income": 40978
             },
             {
                 "year": 2009,
-                "income": 37813
+                "median_household_income": 37813
             },
             {
                 "year": 2010,
-                "income": 35189
+                "median_household_income": 35189
             },
             {
                 "year": 2011,
-                "income": 32364
+                "median_household_income": 32364
             },
             {
                 "year": 2012,
-                "income": 35807
+                "median_household_income": 35807
             },
             {
                 "year": 2013,
-                "income": 38624
+                "median_household_income": 38624
             },
             {
                 "year": 2014,
-                "income": 34047
+                "median_household_income": 34047
             },
             {
                 "year": 2015,
-                "income": 36171
+                "median_household_income": 36171
             },
             {
                 "year": 2016,
-                "income": 38621
+                "median_household_income": 38621
             }
         ],
         "population": [
@@ -12203,55 +12203,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 77981
+                "median_household_income": 77981
             },
             {
                 "year": 2005,
-                "income": 87720
+                "median_household_income": 87720
             },
             {
                 "year": 2006,
-                "income": 90283
+                "median_household_income": 90283
             },
             {
                 "year": 2007,
-                "income": 88540
+                "median_household_income": 88540
             },
             {
                 "year": 2008,
-                "income": 92615
+                "median_household_income": 92615
             },
             {
                 "year": 2009,
-                "income": 102340
+                "median_household_income": 102340
             },
             {
                 "year": 2010,
-                "income": 92464
+                "median_household_income": 92464
             },
             {
                 "year": 2011,
-                "income": 94623
+                "median_household_income": 94623
             },
             {
                 "year": 2012,
-                "income": 92641
+                "median_household_income": 92641
             },
             {
                 "year": 2013,
-                "income": 106420
+                "median_household_income": 106420
             },
             {
                 "year": 2014,
-                "income": 116646
+                "median_household_income": 116646
             },
             {
                 "year": 2015,
-                "income": 114876
+                "median_household_income": 114876
             },
             {
                 "year": 2016,
-                "income": 105906
+                "median_household_income": 105906
             }
         ],
         "population": [
@@ -12691,55 +12691,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 48848
+                "median_household_income": 48848
             },
             {
                 "year": 2005,
-                "income": 46860
+                "median_household_income": 46860
             },
             {
                 "year": 2006,
-                "income": 57021
+                "median_household_income": 57021
             },
             {
                 "year": 2007,
-                "income": 44780
+                "median_household_income": 44780
             },
             {
                 "year": 2008,
-                "income": 50002
+                "median_household_income": 50002
             },
             {
                 "year": 2009,
-                "income": 44381
+                "median_household_income": 44381
             },
             {
                 "year": 2010,
-                "income": 45040
+                "median_household_income": 45040
             },
             {
                 "year": 2011,
-                "income": 46116
+                "median_household_income": 46116
             },
             {
                 "year": 2012,
-                "income": 44032
+                "median_household_income": 44032
             },
             {
                 "year": 2013,
-                "income": 47126
+                "median_household_income": 47126
             },
             {
                 "year": 2014,
-                "income": 49581
+                "median_household_income": 49581
             },
             {
                 "year": 2015,
-                "income": 46603
+                "median_household_income": 46603
             },
             {
                 "year": 2016,
-                "income": 54307
+                "median_household_income": 54307
             }
         ],
         "population": [
@@ -13179,55 +13179,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 44140
+                "median_household_income": 44140
             },
             {
                 "year": 2005,
-                "income": 37580
+                "median_household_income": 37580
             },
             {
                 "year": 2006,
-                "income": 46871
+                "median_household_income": 46871
             },
             {
                 "year": 2007,
-                "income": 41220
+                "median_household_income": 41220
             },
             {
                 "year": 2008,
-                "income": 44481
+                "median_household_income": 44481
             },
             {
                 "year": 2009,
-                "income": 43573
+                "median_household_income": 43573
             },
             {
                 "year": 2010,
-                "income": 42999
+                "median_household_income": 42999
             },
             {
                 "year": 2011,
-                "income": 43912
+                "median_household_income": 43912
             },
             {
                 "year": 2012,
-                "income": 44330
+                "median_household_income": 44330
             },
             {
                 "year": 2013,
-                "income": 40810
+                "median_household_income": 40810
             },
             {
                 "year": 2014,
-                "income": 46334
+                "median_household_income": 46334
             },
             {
                 "year": 2015,
-                "income": 47113
+                "median_household_income": 47113
             },
             {
                 "year": 2016,
-                "income": 52904
+                "median_household_income": 52904
             }
         ],
         "population": [
@@ -13667,55 +13667,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 44581
+                "median_household_income": 44581
             },
             {
                 "year": 2005,
-                "income": 46030
+                "median_household_income": 46030
             },
             {
                 "year": 2006,
-                "income": 41550
+                "median_household_income": 41550
             },
             {
                 "year": 2007,
-                "income": 45130
+                "median_household_income": 45130
             },
             {
                 "year": 2008,
-                "income": 42518
+                "median_household_income": 42518
             },
             {
                 "year": 2009,
-                "income": 42538
+                "median_household_income": 42538
             },
             {
                 "year": 2010,
-                "income": 43248
+                "median_household_income": 43248
             },
             {
                 "year": 2011,
-                "income": 40590
+                "median_household_income": 40590
             },
             {
                 "year": 2012,
-                "income": 41035
+                "median_household_income": 41035
             },
             {
                 "year": 2013,
-                "income": 48400
+                "median_household_income": 48400
             },
             {
                 "year": 2014,
-                "income": 43146
+                "median_household_income": 43146
             },
             {
                 "year": 2015,
-                "income": 46583
+                "median_household_income": 46583
             },
             {
                 "year": 2016,
-                "income": 51793
+                "median_household_income": 51793
             }
         ],
         "population": [
@@ -14155,55 +14155,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 63267
+                "median_household_income": 63267
             },
             {
                 "year": 2005,
-                "income": 60180
+                "median_household_income": 60180
             },
             {
                 "year": 2006,
-                "income": 67030
+                "median_household_income": 67030
             },
             {
                 "year": 2007,
-                "income": 57130
+                "median_household_income": 57130
             },
             {
                 "year": 2008,
-                "income": 62453
+                "median_household_income": 62453
             },
             {
                 "year": 2009,
-                "income": 60026
+                "median_household_income": 60026
             },
             {
                 "year": 2010,
-                "income": 53920
+                "median_household_income": 53920
             },
             {
                 "year": 2011,
-                "income": 61289
+                "median_household_income": 61289
             },
             {
                 "year": 2012,
-                "income": 55709
+                "median_household_income": 55709
             },
             {
                 "year": 2013,
-                "income": 61288
+                "median_household_income": 61288
             },
             {
                 "year": 2014,
-                "income": 58502
+                "median_household_income": 58502
             },
             {
                 "year": 2015,
-                "income": 66345
+                "median_household_income": 66345
             },
             {
                 "year": 2016,
-                "income": 67873
+                "median_household_income": 67873
             }
         ],
         "population": [
@@ -14643,55 +14643,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 50025
+                "median_household_income": 50025
             },
             {
                 "year": 2005,
-                "income": 49670
+                "median_household_income": 49670
             },
             {
                 "year": 2006,
-                "income": 47102
+                "median_household_income": 47102
             },
             {
                 "year": 2007,
-                "income": 48150
+                "median_household_income": 48150
             },
             {
                 "year": 2008,
-                "income": 44023
+                "median_household_income": 44023
             },
             {
                 "year": 2009,
-                "income": 43736
+                "median_household_income": 43736
             },
             {
                 "year": 2010,
-                "income": 42635
+                "median_household_income": 42635
             },
             {
                 "year": 2011,
-                "income": 48197
+                "median_household_income": 48197
             },
             {
                 "year": 2012,
-                "income": 53173
+                "median_household_income": 53173
             },
             {
                 "year": 2013,
-                "income": 49423
+                "median_household_income": 49423
             },
             {
                 "year": 2014,
-                "income": 49269
+                "median_household_income": 49269
             },
             {
                 "year": 2015,
-                "income": 51557
+                "median_household_income": 51557
             },
             {
                 "year": 2016,
-                "income": 52082
+                "median_household_income": 52082
             }
         ],
         "population": [
@@ -15131,55 +15131,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 46641
+                "median_household_income": 46641
             },
             {
                 "year": 2005,
-                "income": 40450
+                "median_household_income": 40450
             },
             {
                 "year": 2006,
-                "income": 48715
+                "median_household_income": 48715
             },
             {
                 "year": 2007,
-                "income": 44130
+                "median_household_income": 44130
             },
             {
                 "year": 2008,
-                "income": 45711
+                "median_household_income": 45711
             },
             {
                 "year": 2009,
-                "income": 46459
+                "median_household_income": 46459
             },
             {
                 "year": 2010,
-                "income": 40289
+                "median_household_income": 40289
             },
             {
                 "year": 2011,
-                "income": 37260
+                "median_household_income": 37260
             },
             {
                 "year": 2012,
-                "income": 40200
+                "median_household_income": 40200
             },
             {
                 "year": 2013,
-                "income": 42417
+                "median_household_income": 42417
             },
             {
                 "year": 2014,
-                "income": 44598
+                "median_household_income": 44598
             },
             {
                 "year": 2015,
-                "income": 44491
+                "median_household_income": 44491
             },
             {
                 "year": 2016,
-                "income": 46692
+                "median_household_income": 46692
             }
         ],
         "population": [
@@ -15619,55 +15619,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 36047
+                "median_household_income": 36047
             },
             {
                 "year": 2005,
-                "income": 31330
+                "median_household_income": 31330
             },
             {
                 "year": 2006,
-                "income": 34046
+                "median_household_income": 34046
             },
             {
                 "year": 2007,
-                "income": 36290
+                "median_household_income": 36290
             },
             {
                 "year": 2008,
-                "income": 37004
+                "median_household_income": 37004
             },
             {
                 "year": 2009,
-                "income": 36955
+                "median_household_income": 36955
             },
             {
                 "year": 2010,
-                "income": 32459
+                "median_household_income": 32459
             },
             {
                 "year": 2011,
-                "income": 30466
+                "median_household_income": 30466
             },
             {
                 "year": 2012,
-                "income": 31844
+                "median_household_income": 31844
             },
             {
                 "year": 2013,
-                "income": 32253
+                "median_household_income": 32253
             },
             {
                 "year": 2014,
-                "income": 30520
+                "median_household_income": 30520
             },
             {
                 "year": 2015,
-                "income": 41512
+                "median_household_income": 41512
             },
             {
                 "year": 2016,
-                "income": 39980
+                "median_household_income": 39980
             }
         ],
         "population": [
@@ -16107,55 +16107,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 51496
+                "median_household_income": 51496
             },
             {
                 "year": 2005,
-                "income": 46220
+                "median_household_income": 46220
             },
             {
                 "year": 2006,
-                "income": 48812
+                "median_household_income": 48812
             },
             {
                 "year": 2007,
-                "income": 47830
+                "median_household_income": 47830
             },
             {
                 "year": 2008,
-                "income": 47150
+                "median_household_income": 47150
             },
             {
                 "year": 2009,
-                "income": 45775
+                "median_household_income": 45775
             },
             {
                 "year": 2010,
-                "income": 48015
+                "median_household_income": 48015
             },
             {
                 "year": 2011,
-                "income": 43868
+                "median_household_income": 43868
             },
             {
                 "year": 2012,
-                "income": 43659
+                "median_household_income": 43659
             },
             {
                 "year": 2013,
-                "income": 44237
+                "median_household_income": 44237
             },
             {
                 "year": 2014,
-                "income": 51918
+                "median_household_income": 51918
             },
             {
                 "year": 2015,
-                "income": 51174
+                "median_household_income": 51174
             },
             {
                 "year": 2016,
-                "income": 51640
+                "median_household_income": 51640
             }
         ],
         "population": [
@@ -16595,55 +16595,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 55911
+                "median_household_income": 55911
             },
             {
                 "year": 2005,
-                "income": 50950
+                "median_household_income": 50950
             },
             {
                 "year": 2006,
-                "income": 51597
+                "median_household_income": 51597
             },
             {
                 "year": 2007,
-                "income": 52570
+                "median_household_income": 52570
             },
             {
                 "year": 2008,
-                "income": 52841
+                "median_household_income": 52841
             },
             {
                 "year": 2009,
-                "income": 55770
+                "median_household_income": 55770
             },
             {
                 "year": 2010,
-                "income": 52338
+                "median_household_income": 52338
             },
             {
                 "year": 2011,
-                "income": 51608
+                "median_household_income": 51608
             },
             {
                 "year": 2012,
-                "income": 50328
+                "median_household_income": 50328
             },
             {
                 "year": 2013,
-                "income": 53387
+                "median_household_income": 53387
             },
             {
                 "year": 2014,
-                "income": 54396
+                "median_household_income": 54396
             },
             {
                 "year": 2015,
-                "income": 56071
+                "median_household_income": 56071
             },
             {
                 "year": 2016,
-                "income": 61327
+                "median_household_income": 61327
             }
         ],
         "population": [
@@ -17083,55 +17083,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 31339
+                "median_household_income": 31339
             },
             {
                 "year": 2005,
-                "income": 27480
+                "median_household_income": 27480
             },
             {
                 "year": 2006,
-                "income": 27953
+                "median_household_income": 27953
             },
             {
                 "year": 2007,
-                "income": 29360
+                "median_household_income": 29360
             },
             {
                 "year": 2008,
-                "income": 31141
+                "median_household_income": 31141
             },
             {
                 "year": 2009,
-                "income": 29301
+                "median_household_income": 29301
             },
             {
                 "year": 2010,
-                "income": 29249
+                "median_household_income": 29249
             },
             {
                 "year": 2011,
-                "income": 27929
+                "median_household_income": 27929
             },
             {
                 "year": 2012,
-                "income": 30149
+                "median_household_income": 30149
             },
             {
                 "year": 2013,
-                "income": 29204
+                "median_household_income": 29204
             },
             {
                 "year": 2014,
-                "income": 26063
+                "median_household_income": 26063
             },
             {
                 "year": 2015,
-                "income": 27887
+                "median_household_income": 27887
             },
             {
                 "year": 2016,
-                "income": 30798
+                "median_household_income": 30798
             }
         ],
         "population": [
@@ -17571,55 +17571,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 51496
+                "median_household_income": 51496
             },
             {
                 "year": 2005,
-                "income": 51760
+                "median_household_income": 51760
             },
             {
                 "year": 2006,
-                "income": 50495
+                "median_household_income": 50495
             },
             {
                 "year": 2007,
-                "income": 50000
+                "median_household_income": 50000
             },
             {
                 "year": 2008,
-                "income": 49633
+                "median_household_income": 49633
             },
             {
                 "year": 2009,
-                "income": 54252
+                "median_household_income": 54252
             },
             {
                 "year": 2010,
-                "income": 48305
+                "median_household_income": 48305
             },
             {
                 "year": 2011,
-                "income": 48376
+                "median_household_income": 48376
             },
             {
                 "year": 2012,
-                "income": 51686
+                "median_household_income": 51686
             },
             {
                 "year": 2013,
-                "income": 44607
+                "median_household_income": 44607
             },
             {
                 "year": 2014,
-                "income": 43698
+                "median_household_income": 43698
             },
             {
                 "year": 2015,
-                "income": 51860
+                "median_household_income": 51860
             },
             {
                 "year": 2016,
-                "income": 52259
+                "median_household_income": 52259
             }
         ],
         "population": [
@@ -18059,55 +18059,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 73567
+                "median_household_income": 73567
             },
             {
                 "year": 2005,
-                "income": 65000
+                "median_household_income": 65000
             },
             {
                 "year": 2006,
-                "income": 71924
+                "median_household_income": 71924
             },
             {
                 "year": 2007,
-                "income": 70860
+                "median_household_income": 70860
             },
             {
                 "year": 2008,
-                "income": 71091
+                "median_household_income": 71091
             },
             {
                 "year": 2009,
-                "income": 72375
+                "median_household_income": 72375
             },
             {
                 "year": 2010,
-                "income": 65578
+                "median_household_income": 65578
             },
             {
                 "year": 2011,
-                "income": 64622
+                "median_household_income": 64622
             },
             {
                 "year": 2012,
-                "income": 65391
+                "median_household_income": 65391
             },
             {
                 "year": 2013,
-                "income": 69299
+                "median_household_income": 69299
             },
             {
                 "year": 2014,
-                "income": 64067
+                "median_household_income": 64067
             },
             {
                 "year": 2015,
-                "income": 71205
+                "median_household_income": 71205
             },
             {
                 "year": 2016,
-                "income": 76866
+                "median_household_income": 76866
             }
         ],
         "population": [
@@ -18547,55 +18547,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 53924
+                "median_household_income": 53924
             },
             {
                 "year": 2005,
-                "income": 46660
+                "median_household_income": 46660
             },
             {
                 "year": 2006,
-                "income": 51237
+                "median_household_income": 51237
             },
             {
                 "year": 2007,
-                "income": 53910
+                "median_household_income": 53910
             },
             {
                 "year": 2008,
-                "income": 59294
+                "median_household_income": 59294
             },
             {
                 "year": 2009,
-                "income": 53783
+                "median_household_income": 53783
             },
             {
                 "year": 2010,
-                "income": 51866
+                "median_household_income": 51866
             },
             {
                 "year": 2011,
-                "income": 50638
+                "median_household_income": 50638
             },
             {
                 "year": 2012,
-                "income": 55126
+                "median_household_income": 55126
             },
             {
                 "year": 2013,
-                "income": 53278
+                "median_household_income": 53278
             },
             {
                 "year": 2014,
-                "income": 58061
+                "median_household_income": 58061
             },
             {
                 "year": 2015,
-                "income": 59440
+                "median_household_income": 59440
             },
             {
                 "year": 2016,
-                "income": 61588
+                "median_household_income": 61588
             }
         ],
         "population": [
@@ -19035,55 +19035,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 58853
+                "median_household_income": 58853
             },
             {
                 "year": 2005,
-                "income": 50950
+                "median_household_income": 50950
             },
             {
                 "year": 2006,
-                "income": 54390
+                "median_household_income": 54390
             },
             {
                 "year": 2007,
-                "income": 61830
+                "median_household_income": 61830
             },
             {
                 "year": 2008,
-                "income": 61859
+                "median_household_income": 61859
             },
             {
                 "year": 2009,
-                "income": 62500
+                "median_household_income": 62500
             },
             {
                 "year": 2010,
-                "income": 58186
+                "median_household_income": 58186
             },
             {
                 "year": 2011,
-                "income": 54312
+                "median_household_income": 54312
             },
             {
                 "year": 2012,
-                "income": 52990
+                "median_household_income": 52990
             },
             {
                 "year": 2013,
-                "income": 64649
+                "median_household_income": 64649
             },
             {
                 "year": 2014,
-                "income": 59089
+                "median_household_income": 59089
             },
             {
                 "year": 2015,
-                "income": 62047
+                "median_household_income": 62047
             },
             {
                 "year": 2016,
-                "income": 63493
+                "median_household_income": 63493
             }
         ],
         "population": [
@@ -19523,55 +19523,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 56779
+                "median_household_income": 56779
             },
             {
                 "year": 2005,
-                "income": 50950
+                "median_household_income": 50950
             },
             {
                 "year": 2006,
-                "income": 58155
+                "median_household_income": 58155
             },
             {
                 "year": 2007,
-                "income": 56440
+                "median_household_income": 56440
             },
             {
                 "year": 2008,
-                "income": 54637
+                "median_household_income": 54637
             },
             {
                 "year": 2009,
-                "income": 58488
+                "median_household_income": 58488
             },
             {
                 "year": 2010,
-                "income": 50038
+                "median_household_income": 50038
             },
             {
                 "year": 2011,
-                "income": 50533
+                "median_household_income": 50533
             },
             {
                 "year": 2012,
-                "income": 45836
+                "median_household_income": 45836
             },
             {
                 "year": 2013,
-                "income": 51418
+                "median_household_income": 51418
             },
             {
                 "year": 2014,
-                "income": 51190
+                "median_household_income": 51190
             },
             {
                 "year": 2015,
-                "income": 55791
+                "median_household_income": 55791
             },
             {
                 "year": 2016,
-                "income": 54118
+                "median_household_income": 54118
             }
         ],
         "population": [
@@ -20011,55 +20011,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 52968
+                "median_household_income": 52968
             },
             {
                 "year": 2005,
-                "income": 50860
+                "median_household_income": 50860
             },
             {
                 "year": 2006,
-                "income": 50398
+                "median_household_income": 50398
             },
             {
                 "year": 2007,
-                "income": 51740
+                "median_household_income": 51740
             },
             {
                 "year": 2008,
-                "income": 47672
+                "median_household_income": 47672
             },
             {
                 "year": 2009,
-                "income": 49094
+                "median_household_income": 49094
             },
             {
                 "year": 2010,
-                "income": 46029
+                "median_household_income": 46029
             },
             {
                 "year": 2011,
-                "income": 49473
+                "median_household_income": 49473
             },
             {
                 "year": 2012,
-                "income": 44294
+                "median_household_income": 44294
             },
             {
                 "year": 2013,
-                "income": 48604
+                "median_household_income": 48604
             },
             {
                 "year": 2014,
-                "income": 46705
+                "median_household_income": 46705
             },
             {
                 "year": 2015,
-                "income": 45071
+                "median_household_income": 45071
             },
             {
                 "year": 2016,
-                "income": 43050
+                "median_household_income": 43050
             }
         ],
         "population": [
@@ -20499,55 +20499,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 60325
+                "median_household_income": 60325
             },
             {
                 "year": 2005,
-                "income": 59490
+                "median_household_income": 59490
             },
             {
                 "year": 2006,
-                "income": 61414
+                "median_household_income": 61414
             },
             {
                 "year": 2007,
-                "income": 58890
+                "median_household_income": 58890
             },
             {
                 "year": 2008,
-                "income": 61296
+                "median_household_income": 61296
             },
             {
                 "year": 2009,
-                "income": 59552
+                "median_household_income": 59552
             },
             {
                 "year": 2010,
-                "income": 59375
+                "median_household_income": 59375
             },
             {
                 "year": 2011,
-                "income": 56817
+                "median_household_income": 56817
             },
             {
                 "year": 2012,
-                "income": 54076
+                "median_household_income": 54076
             },
             {
                 "year": 2013,
-                "income": 61228
+                "median_household_income": 61228
             },
             {
                 "year": 2014,
-                "income": 65687
+                "median_household_income": 65687
             },
             {
                 "year": 2015,
-                "income": 64197
+                "median_household_income": 64197
             },
             {
                 "year": 2016,
-                "income": 76170
+                "median_household_income": 76170
             }
         ],
         "population": [
@@ -20987,55 +20987,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 70624
+                "median_household_income": 70624
             },
             {
                 "year": 2005,
-                "income": 64760
+                "median_household_income": 64760
             },
             {
                 "year": 2006,
-                "income": 73103
+                "median_household_income": 73103
             },
             {
                 "year": 2007,
-                "income": 73650
+                "median_household_income": 73650
             },
             {
                 "year": 2008,
-                "income": 75730
+                "median_household_income": 75730
             },
             {
                 "year": 2009,
-                "income": 75276
+                "median_household_income": 75276
             },
             {
                 "year": 2010,
-                "income": 61468
+                "median_household_income": 61468
             },
             {
                 "year": 2011,
-                "income": 71436
+                "median_household_income": 71436
             },
             {
                 "year": 2012,
-                "income": 67158
+                "median_household_income": 67158
             },
             {
                 "year": 2013,
-                "income": 64459
+                "median_household_income": 64459
             },
             {
                 "year": 2014,
-                "income": 63242
+                "median_household_income": 63242
             },
             {
                 "year": 2015,
-                "income": 73099
+                "median_household_income": 73099
             },
             {
                 "year": 2016,
-                "income": 71947
+                "median_household_income": 71947
             }
         ],
         "population": [
@@ -21475,55 +21475,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 64739
+                "median_household_income": 64739
             },
             {
                 "year": 2005,
-                "income": 60850
+                "median_household_income": 60850
             },
             {
                 "year": 2006,
-                "income": 61609
+                "median_household_income": 61609
             },
             {
                 "year": 2007,
-                "income": 60730
+                "median_household_income": 60730
             },
             {
                 "year": 2008,
-                "income": 64012
+                "median_household_income": 64012
             },
             {
                 "year": 2009,
-                "income": 59314
+                "median_household_income": 59314
             },
             {
                 "year": 2010,
-                "income": 58083
+                "median_household_income": 58083
             },
             {
                 "year": 2011,
-                "income": 53797
+                "median_household_income": 53797
             },
             {
                 "year": 2012,
-                "income": 55621
+                "median_household_income": 55621
             },
             {
                 "year": 2013,
-                "income": 52787
+                "median_household_income": 52787
             },
             {
                 "year": 2014,
-                "income": 53764
+                "median_household_income": 53764
             },
             {
                 "year": 2015,
-                "income": 52251
+                "median_household_income": 52251
             },
             {
                 "year": 2016,
-                "income": 52044
+                "median_household_income": 52044
             }
         ],
         "population": [
@@ -21963,55 +21963,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 72095
+                "median_household_income": 72095
             },
             {
                 "year": 2005,
-                "income": 59390
+                "median_household_income": 59390
             },
             {
                 "year": 2006,
-                "income": 68941
+                "median_household_income": 68941
             },
             {
                 "year": 2007,
-                "income": 64170
+                "median_household_income": 64170
             },
             {
                 "year": 2008,
-                "income": 68907
+                "median_household_income": 68907
             },
             {
                 "year": 2009,
-                "income": 60375
+                "median_household_income": 60375
             },
             {
                 "year": 2010,
-                "income": 61577
+                "median_household_income": 61577
             },
             {
                 "year": 2011,
-                "income": 57710
+                "median_household_income": 57710
             },
             {
                 "year": 2012,
-                "income": 68157
+                "median_household_income": 68157
             },
             {
                 "year": 2013,
-                "income": 60148
+                "median_household_income": 60148
             },
             {
                 "year": 2014,
-                "income": 57086
+                "median_household_income": 57086
             },
             {
                 "year": 2015,
-                "income": 64269
+                "median_household_income": 64269
             },
             {
                 "year": 2016,
-                "income": 67946
+                "median_household_income": 67946
             }
         ],
         "population": [
@@ -22451,55 +22451,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 63488
+                "median_household_income": 63488
             },
             {
                 "year": 2005,
-                "income": 57320
+                "median_household_income": 57320
             },
             {
                 "year": 2006,
-                "income": 64145
+                "median_household_income": 64145
             },
             {
                 "year": 2007,
-                "income": 60430
+                "median_household_income": 60430
             },
             {
                 "year": 2008,
-                "income": 59434
+                "median_household_income": 59434
             },
             {
                 "year": 2009,
-                "income": 59191
+                "median_household_income": 59191
             },
             {
                 "year": 2010,
-                "income": 63714
+                "median_household_income": 63714
             },
             {
                 "year": 2011,
-                "income": 59461
+                "median_household_income": 59461
             },
             {
                 "year": 2012,
-                "income": 59155
+                "median_household_income": 59155
             },
             {
                 "year": 2013,
-                "income": 65377
+                "median_household_income": 65377
             },
             {
                 "year": 2014,
-                "income": 63227
+                "median_household_income": 63227
             },
             {
                 "year": 2015,
-                "income": 62317
+                "median_household_income": 62317
             },
             {
                 "year": 2016,
-                "income": 67833
+                "median_household_income": 67833
             }
         ],
         "population": [
@@ -22939,55 +22939,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 71212
+                "median_household_income": 71212
             },
             {
                 "year": 2005,
-                "income": 64040
+                "median_household_income": 64040
             },
             {
                 "year": 2006,
-                "income": 68882
+                "median_household_income": 68882
             },
             {
                 "year": 2007,
-                "income": 69470
+                "median_household_income": 69470
             },
             {
                 "year": 2008,
-                "income": 65894
+                "median_household_income": 65894
             },
             {
                 "year": 2009,
-                "income": 70345
+                "median_household_income": 70345
             },
             {
                 "year": 2010,
-                "income": 62771
+                "median_household_income": 62771
             },
             {
                 "year": 2011,
-                "income": 63451
+                "median_household_income": 63451
             },
             {
                 "year": 2012,
-                "income": 63647
+                "median_household_income": 63647
             },
             {
                 "year": 2013,
-                "income": 65522
+                "median_household_income": 65522
             },
             {
                 "year": 2014,
-                "income": 62887
+                "median_household_income": 62887
             },
             {
                 "year": 2015,
-                "income": 69366
+                "median_household_income": 69366
             },
             {
                 "year": 2016,
-                "income": 73896
+                "median_household_income": 73896
             }
         ],
         "population": [
@@ -23427,55 +23427,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 82983
+                "median_household_income": 82983
             },
             {
                 "year": 2005,
-                "income": 81950
+                "median_household_income": 81950
             },
             {
                 "year": 2006,
-                "income": 82091
+                "median_household_income": 82091
             },
             {
                 "year": 2007,
-                "income": 81350
+                "median_household_income": 81350
             },
             {
                 "year": 2008,
-                "income": 84272
+                "median_household_income": 84272
             },
             {
                 "year": 2009,
-                "income": 81716
+                "median_household_income": 81716
             },
             {
                 "year": 2010,
-                "income": 78588
+                "median_household_income": 78588
             },
             {
                 "year": 2011,
-                "income": 83496
+                "median_household_income": 83496
             },
             {
                 "year": 2012,
-                "income": 76650
+                "median_household_income": 76650
             },
             {
                 "year": 2013,
-                "income": 75441
+                "median_household_income": 75441
             },
             {
                 "year": 2014,
-                "income": 83442
+                "median_household_income": 83442
             },
             {
                 "year": 2015,
-                "income": 81642
+                "median_household_income": 81642
             },
             {
                 "year": 2016,
-                "income": 80663
+                "median_household_income": 80663
             }
         ],
         "population": [
@@ -23915,55 +23915,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 58265
+                "median_household_income": 58265
             },
             {
                 "year": 2005,
-                "income": 57460
+                "median_household_income": 57460
             },
             {
                 "year": 2006,
-                "income": 59499
+                "median_household_income": 59499
             },
             {
                 "year": 2007,
-                "income": 56240
+                "median_household_income": 56240
             },
             {
                 "year": 2008,
-                "income": 59552
+                "median_household_income": 59552
             },
             {
                 "year": 2009,
-                "income": 61520
+                "median_household_income": 61520
             },
             {
                 "year": 2010,
-                "income": 55481
+                "median_household_income": 55481
             },
             {
                 "year": 2011,
-                "income": 54221
+                "median_household_income": 54221
             },
             {
                 "year": 2012,
-                "income": 53921
+                "median_household_income": 53921
             },
             {
                 "year": 2013,
-                "income": 53790
+                "median_household_income": 53790
             },
             {
                 "year": 2014,
-                "income": 54210
+                "median_household_income": 54210
             },
             {
                 "year": 2015,
-                "income": 60096
+                "median_household_income": 60096
             },
             {
                 "year": 2016,
-                "income": 61268
+                "median_household_income": 61268
             }
         ],
         "population": [
@@ -24403,55 +24403,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 83439
+                "median_household_income": 83439
             },
             {
                 "year": 2005,
-                "income": 83630
+                "median_household_income": 83630
             },
             {
                 "year": 2006,
-                "income": 80352
+                "median_household_income": 80352
             },
             {
                 "year": 2007,
-                "income": 87070
+                "median_household_income": 87070
             },
             {
                 "year": 2008,
-                "income": 85297
+                "median_household_income": 85297
             },
             {
                 "year": 2009,
-                "income": 81601
+                "median_household_income": 81601
             },
             {
                 "year": 2010,
-                "income": 84806
+                "median_household_income": 84806
             },
             {
                 "year": 2011,
-                "income": 81691
+                "median_household_income": 81691
             },
             {
                 "year": 2012,
-                "income": 77603
+                "median_household_income": 77603
             },
             {
                 "year": 2013,
-                "income": 80383
+                "median_household_income": 80383
             },
             {
                 "year": 2014,
-                "income": 78144
+                "median_household_income": 78144
             },
             {
                 "year": 2015,
-                "income": 83522
+                "median_household_income": 83522
             },
             {
                 "year": 2016,
-                "income": 82125
+                "median_household_income": 82125
             }
         ],
         "population": [
@@ -24891,55 +24891,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 51349
+                "median_household_income": 51349
             },
             {
                 "year": 2005,
-                "income": 55850
+                "median_household_income": 55850
             },
             {
                 "year": 2006,
-                "income": 53011
+                "median_household_income": 53011
             },
             {
                 "year": 2007,
-                "income": 48790
+                "median_household_income": 48790
             },
             {
                 "year": 2008,
-                "income": 52574
+                "median_household_income": 52574
             },
             {
                 "year": 2009,
-                "income": 58556
+                "median_household_income": 58556
             },
             {
                 "year": 2010,
-                "income": 53426
+                "median_household_income": 53426
             },
             {
                 "year": 2011,
-                "income": 45814
+                "median_household_income": 45814
             },
             {
                 "year": 2012,
-                "income": 52021
+                "median_household_income": 52021
             },
             {
                 "year": 2013,
-                "income": 48857
+                "median_household_income": 48857
             },
             {
                 "year": 2014,
-                "income": 45648
+                "median_household_income": 45648
             },
             {
                 "year": 2015,
-                "income": 53933
+                "median_household_income": 53933
             },
             {
                 "year": 2016,
-                "income": 45231
+                "median_household_income": 45231
             }
         ],
         "population": [
@@ -25379,55 +25379,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 68270
+                "median_household_income": 68270
             },
             {
                 "year": 2005,
-                "income": 64090
+                "median_household_income": 64090
             },
             {
                 "year": 2006,
-                "income": 71148
+                "median_household_income": 71148
             },
             {
                 "year": 2007,
-                "income": 64980
+                "median_household_income": 64980
             },
             {
                 "year": 2008,
-                "income": 63334
+                "median_household_income": 63334
             },
             {
                 "year": 2009,
-                "income": 63677
+                "median_household_income": 63677
             },
             {
                 "year": 2010,
-                "income": 66153
+                "median_household_income": 66153
             },
             {
                 "year": 2011,
-                "income": 58757
+                "median_household_income": 58757
             },
             {
                 "year": 2012,
-                "income": 59934
+                "median_household_income": 59934
             },
             {
                 "year": 2013,
-                "income": 63484
+                "median_household_income": 63484
             },
             {
                 "year": 2014,
-                "income": 59436
+                "median_household_income": 59436
             },
             {
                 "year": 2015,
-                "income": 57591
+                "median_household_income": 57591
             },
             {
                 "year": 2016,
-                "income": 66858
+                "median_household_income": 66858
             }
         ],
         "population": [
@@ -25867,55 +25867,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 82100
+                "median_household_income": 82100
             },
             {
                 "year": 2005,
-                "income": 73670
+                "median_household_income": 73670
             },
             {
                 "year": 2006,
-                "income": 83999
+                "median_household_income": 83999
             },
             {
                 "year": 2007,
-                "income": 79350
+                "median_household_income": 79350
             },
             {
                 "year": 2008,
-                "income": 85913
+                "median_household_income": 85913
             },
             {
                 "year": 2009,
-                "income": 79376
+                "median_household_income": 79376
             },
             {
                 "year": 2010,
-                "income": 76628
+                "median_household_income": 76628
             },
             {
                 "year": 2011,
-                "income": 77025
+                "median_household_income": 77025
             },
             {
                 "year": 2012,
-                "income": 75794
+                "median_household_income": 75794
             },
             {
                 "year": 2013,
-                "income": 71785
+                "median_household_income": 71785
             },
             {
                 "year": 2014,
-                "income": 73735
+                "median_household_income": 73735
             },
             {
                 "year": 2015,
-                "income": 76131
+                "median_household_income": 76131
             },
             {
                 "year": 2016,
-                "income": 83761
+                "median_household_income": 83761
             }
         ],
         "population": [
@@ -26355,55 +26355,55 @@
         "median_household_income": [
             {
                 "year": 2000,
-                "income": 92694
+                "median_household_income": 92694
             },
             {
                 "year": 2005,
-                "income": 99460
+                "median_household_income": 99460
             },
             {
                 "year": 2006,
-                "income": 99685
+                "median_household_income": 99685
             },
             {
                 "year": 2007,
-                "income": 90970
+                "median_household_income": 90970
             },
             {
                 "year": 2008,
-                "income": 103392
+                "median_household_income": 103392
             },
             {
                 "year": 2009,
-                "income": 87257
+                "median_household_income": 87257
             },
             {
                 "year": 2010,
-                "income": 91051
+                "median_household_income": 91051
             },
             {
                 "year": 2011,
-                "income": 88150
+                "median_household_income": 88150
             },
             {
                 "year": 2012,
-                "income": 87238
+                "median_household_income": 87238
             },
             {
                 "year": 2013,
-                "income": 89040
+                "median_household_income": 89040
             },
             {
                 "year": 2014,
-                "income": 85353
+                "median_household_income": 85353
             },
             {
                 "year": 2015,
-                "income": 83689
+                "median_household_income": 83689
             },
             {
                 "year": 2016,
-                "income": 91793
+                "median_household_income": 91793
             }
         ],
         "population": [
