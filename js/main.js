@@ -51,11 +51,9 @@
       .tickFormat(d3.timeFormat('%Y'))
       .tickValues(data)
       .default(new Date(2005, 1, 1))
-      .on('end', val => {
+      .on('onchange', val => {
         let year = d3.timeFormat('%Y')(val);
         if (year != currentlySelectedYear) {
-          console.log("different");
-          console.log(year);
           d3.select("#yearSelected").text(year);
           map.updateCurrentYear(year); // 2005 is the default starting year
           currentlySelectedYear = year;
