@@ -22,7 +22,7 @@ AttributeSelector.prototype.init = function() {
             }
           }
         }
-        $(vis.attributeHandler).trigger("attributeSelected", selectedAttributes);
+        $(vis.attributeHandler).trigger("attributeSelected", [selectedAttributes]);
       }
     }
 }

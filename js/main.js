@@ -6,11 +6,12 @@
   var instance = null;
 
   var attrEnum = {
-    0: "median_household_income",
-    1: "population",
-    2: "poverty_rate",
-    3: "racial_diversity_index",
-    4: "unemployment_rate"
+    0: "housing_units",
+    1: "mean_travel_time",
+    2: "median_household_income",
+    3: "median_rent",
+    4: "population",
+    5: "racial_diversity_index"
   };
 
   /**
@@ -22,7 +23,7 @@
     // python -m http.server
     let subBoroughHandler = {};
     let attributeHandler = {};
-    var map = new Map(subBoroughHandler);
+    var map = new Map(subBoroughHandler, attrEnum);
     var attrSelector = new AttributeSelector(map, attributeHandler);
     var timeline = new Timeline("timeline", attrEnum);
     $(subBoroughHandler).bind("subBoroughSelected", function (event, subBorough) {
@@ -32,6 +33,7 @@
     });
     $(attributeHandler).bind("attributeSelected", function (event, attr) {
       // update map and timeline
+      console.log("handler", attr);
       map.updateVis(attr ? attr : []);
       if (attr) timeline.attributeSelected(attr);
     });

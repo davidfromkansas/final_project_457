@@ -1,5 +1,6 @@
-Map = function (_subBoroughHandler) {
+Map = function (_subBoroughHandler, _attrEnum) {
   this.subBoroughHandler = _subBoroughHandler;
+  this.attrEnum = _attrEnum;
   this.initVis();
 }
 
@@ -56,37 +57,28 @@ Map.prototype.updateCurrentYear = function (newYear) {
 
 
 Map.prototype.updateVis = function (selectedAttributes) {
-  // selectedAttribue[i] == "0" means MEDIAN HOUSEHOLD INCOME
-  // selectedAttribue[i] == "1" means POPULATION
-  // selectedAttribue[i] == "2" means POVERTY RATE
-  // selectedAttribue[i] == "3" means RACIAL DIVERSITY INDEX
-  // selectedAttribue[i] == "4" means UNEMPLOYMENT RATE
   var vis = this;
 
   var blueScale = d3.scaleOrdinal(d3.schemeBlues[9]);
+  console.log(vis.gentrificationData);
 
   vis.map.selectAll("path")
     .data(vis.geojson.features)
     .attr("fill", function (d) {
       var average = 0;
       var numAttributes = selectedAttributes.length;
-      console.log(`Selected Attributes: ${selectedAttributes}`);
-      if (selectedAttributes.includes("0")) {    // median household income
-        average += vis.gentrificationData[d.properties.subborough].median_household_income[1].median_household_income;
-      }
-      if (selectedAttributes.includes("1")) {
-        average += vis.gentrificationData[d.properties.subborough].population[1].population;
-      }
-      if (selectedAttributes.includes("2")) {
-        average += vis.gentrificationData[d.properties.subborough].poverty_rate[1].poverty_rate;
-      }
-      if (selectedAttributes.includes("3")) {
-        average += vis.gentrificationData[d.properties.subborough].racial_diversity_index[1].racial_diversity_index;
-      }
-      if (selectedAttributes.includes("4")) {
-        average += vis.gentrificationData[d.properties.subborough].unemployment_rate[1].unemployment_rate;
-      }
-      average = average / numAttributes;
+
+      // TODO: CHANGE HOW WE CALCULATE THE SCORE
+      // CALCULATING SCORE HERE
+      selectedAttributes.forEach(function(attr) {
+        let data = vis.gentrificationData[d.properties.subborough][vis.attrEnum[attr]].normalized
+        let currAttr = vis.attrEnum[attr]
+        let sum = 0
+        data.forEach(function(val) {
+          sum += val[currAttr]
+        })
+        average += (sum / data.length)
+      })
       return blueScale(average);
     })
     .attr("stroke", function (d) {
