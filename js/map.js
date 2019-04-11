@@ -8,6 +8,8 @@ Map.prototype.initVis = function () {
 
   var vis = this;
 
+  vis.currentYear = 2005; // 2005 is the default year
+
   d3.queue()
     .defer(d3.json, "data/data.json")
     .defer(d3.json, "data/nyc_sub_borough_area.geojson")
@@ -22,7 +24,7 @@ Map.prototype.initVis = function () {
       var path = d3.geoPath().projection(d3.geoConicConformal()
         .parallels([33, 45])
         .rotate([96, -39])
-        .fitSize([960, 500], vis.geojson));
+        .fitSize([700, 550], vis.geojson));
 
       vis.map.selectAll("path")
         .data(vis.geojson.features)
@@ -44,13 +46,21 @@ Map.prototype.initVis = function () {
     });
 }
 
+
+// updates current year and calls updateVis to generate currentYear data
+// Note: Whenever this function is called, we should also somehow call updateVis to update the map - DLT
+Map.prototype.updateCurrentYear = function (newYear) {
+  var vis = this;
+  vis.currentYear = newYear
+}
+
+
 Map.prototype.updateVis = function (selectedAttributes) {
   // selectedAttribue[i] == "0" means MEDIAN HOUSEHOLD INCOME
   // selectedAttribue[i] == "1" means POPULATION
   // selectedAttribue[i] == "2" means POVERTY RATE
   // selectedAttribue[i] == "3" means RACIAL DIVERSITY INDEX
   // selectedAttribue[i] == "4" means UNEMPLOYMENT RATE
-
   var vis = this;
 
   var blueScale = d3.scaleOrdinal(d3.schemeBlues[9]);
@@ -60,7 +70,8 @@ Map.prototype.updateVis = function (selectedAttributes) {
     .attr("fill", function (d) {
       var average = 0;
       var numAttributes = selectedAttributes.length;
-      if (selectedAttributes.includes("0")) {
+      console.log(`Selected Attributes: ${selectedAttributes}`);
+      if (selectedAttributes.includes("0")) {    // median household income
         average += vis.gentrificationData[d.properties.subborough].median_household_income[1].median_household_income;
       }
       if (selectedAttributes.includes("1")) {

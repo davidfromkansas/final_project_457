@@ -9,23 +9,43 @@
 
 <body>
   <h1>Gentrification in New York City</h1>
-  <h2>To view process book, click <a href="proposal/proposal.html">here</a></h2>
-  <div class="row">
-    <div class="col">
-      <h1>Attribute Selector</h1>
-      <div id="attrSelector">
+  <!-- <h2>To view process book, click <a href="proposal/proposal.html">here</a></h2> -->
+  <div>
+    <h2>Attributes</h2>
+    <div class="row">
+      <!-- <div id="attrSelector"> -->
+      <div class="col-sm">
         <label class="chkbx"><input type="checkbox" name="medianHouseholdIncome" value="0" checked /> Median Household
           Income</label></br>
+      </div>
+      <div class="col-sm">
         <label class="chkbx"><input type="checkbox" name="population" value="1" /> Population</label></br>
+      </div>
+      <div class="col-sm">
         <label class="chkbx"><input type="checkbox" name="povertyRate" value="2" /> Poverty Rate</label></br>
+      </div>
+      <div class="col-sm">
         <label class="chkbx"><input type="checkbox" name="racialDiversityIndex" value="3" /> Racial Diversity
           Index</label></br>
+      </div>
+      <div class="col-sm">
         <label class="chkbx"><input type="checkbox" name="unemploymentRate" value="4" /> Unemployment Rate</label></br>
+      </div>
+      <!-- </div> -->
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <h1>Neighborhoods</h1>
+      <svg id="subborough" width="700" height="550"></svg>
+      <div id="slider">
+        <h3>Select a year: <b id="yearSelected">2005</b></h3>
+
       </div>
     </div>
     <div class="col">
-      <h1>Sub-Boroughs</h1>
-      <svg id="subborough" width="960" height="550"></svg>
+
     </div>
   </div>
 
@@ -40,6 +60,7 @@
   </div>
 </body>
 
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
   integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
@@ -49,6 +70,9 @@
 <script src="js/d3.min.js"></script>
 <script src="js/d3-scale-chromatic.min.js"></script>
 <script src="js/d3-queue/d3-queue.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.4/lodash.min.js"></script> -->
+<script src="https://unpkg.com/d3-simple-slider"></script>
+<!-- <script src="https://unpkg.com/d3-simple-slider@0.1.2/build/d3-simple-slider.js"></script> -->
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
 <script src="js/map.js"></script>
