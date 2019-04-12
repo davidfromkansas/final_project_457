@@ -8,6 +8,8 @@ Map = function (_subBoroughHandler, _attrEnum) {
 Map.prototype.initVis = function () {
 
   var vis = this;
+  vis.svg = d3.select("#subborough")
+              .attr("width", window.innerWidth/3)
 
   vis.currentYear = 2005; // 2005 is the default year
 
@@ -25,7 +27,7 @@ Map.prototype.initVis = function () {
       var path = d3.geoPath().projection(d3.geoConicConformal()
         .parallels([33, 45])
         .rotate([96, -39])
-        .fitSize([700, 550], vis.geojson));
+        .fitSize([window.innerWidth/3, 550], vis.geojson));
 
       vis.map.selectAll("path")
         .data(vis.geojson.features)

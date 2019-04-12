@@ -25,17 +25,23 @@
     let attributeHandler = {};
     var map = new Map(subBoroughHandler, attrEnum);
     var attrSelector = new AttributeSelector(map, attributeHandler);
-    var timeline = new Timeline("timeline", attrEnum);
+    var barchart4 = new BarChart("q4", attrEnum, true, 4);
+    var barchart1 = new BarChart("q1", attrEnum, true, 1);
+    var barchart3 = new BarChart("q3", attrEnum, true, 3);
+    var barchart2 = new BarChart("q2", attrEnum, true, 2);
+
     $(subBoroughHandler).bind("subBoroughSelected", function (event, subBorough) {
       // update timeline
-      // console.log(subBorough);
-      timeline.subBoroughSelected(subBorough);
+      console.log(subBorough);
+      barchart4.subBoroughSelected(subBorough);
+      // barchart1.subBoroughSelected(subBorough);
+
     });
     $(attributeHandler).bind("attributeSelected", function (event, attr) {
       // update map and timeline
       console.log("handler", attr);
       map.updateVis(attr ? attr : []);
-      if (attr) timeline.attributeSelected(attr);
+      // if (attr) timeline.attributeSelected(attr);
     });
 
     // add slider which lets users select a specific year
