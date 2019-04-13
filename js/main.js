@@ -34,9 +34,10 @@
     $(subBoroughHandler).bind("subBoroughSelected", function (event, subBorough) {
       // update timeline
       console.log(subBorough);
-      barchart4.subBoroughSelected(subBorough);
+      // barchart4.subBoroughSelected(subBorough);
       // barchart1.subBoroughSelected(subBorough);
-
+      // barchart3.subBoroughSelected(subBorough);
+      // barchart2.subBoroughSelected(subBorough);
     });
     $(attributeHandler).bind("attributeSelected", function (event, attr) {
       // update map and timeline

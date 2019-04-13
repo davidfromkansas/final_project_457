@@ -23,10 +23,10 @@ BarChart = function(_parentElement, _attrEnum, _displayYears, _quadrant){
 BarChart.prototype.initVis = function(){
 	var vis = this;
 
-	vis.margin = { top: 20, right: 60, bottom: 30, left: 60 };
+	vis.margin = { top: 5, right: 5, bottom: 5, left: 5 };
 
   vis.width = $("#" + vis.parentElement).width() - vis.margin.left - vis.margin.right,
-  vis.height = $("#" + vis.parentElement).height() - vis.margin.top - vis.margin.bottom;
+  vis.height = 350 - vis.margin.top - vis.margin.bottom;
 
 	// SVG drawing area
 	vis.svg = d3.select("#" + vis.parentElement).append("svg")
