@@ -8,8 +8,7 @@ Map = function (_subBoroughHandler, _attrEnum) {
 Map.prototype.initVis = function () {
 
   var vis = this;
-  vis.svg = d3.select("#subborough")
-              .attr("width", window.innerWidth/3)
+  vis.svg = d3.select("#subborough").append("svg").attr("width", window.innerWidth / 3).attr("height", window.innerHeight);
 
   vis.currentYear = 2005; // 2005 is the default year
 
@@ -22,14 +21,12 @@ Map.prototype.initVis = function () {
       vis.gentrificationData = results[0]
       vis.geojson = results[1]
 
-      vis.map = d3.select("#subborough")
-
       var path = d3.geoPath().projection(d3.geoConicConformal()
         .parallels([33, 45])
         .rotate([96, -39])
-        .fitSize([window.innerWidth/3, 550], vis.geojson));
+        .fitSize([window.innerWidth / 3, 550], vis.geojson));
 
-      vis.map.selectAll("path")
+      vis.svg.selectAll("path")
         .data(vis.geojson.features)
         .enter()
         .append("path")
@@ -55,6 +52,7 @@ Map.prototype.initVis = function () {
 Map.prototype.updateCurrentYear = function (newYear) {
   var vis = this;
   vis.currentYear = newYear
+  console.log(newYear)
 }
 
 
@@ -72,11 +70,11 @@ Map.prototype.updateVis = function (selectedAttributes) {
 
       // TODO: CHANGE HOW WE CALCULATE THE SCORE
       // CALCULATING SCORE HERE
-      selectedAttributes.forEach(function(attr) {
+      selectedAttributes.forEach(function (attr) {
         let data = vis.gentrificationData[d.properties.subborough][vis.attrEnum[attr]].normalized
         let currAttr = vis.attrEnum[attr]
         let sum = 0
-        data.forEach(function(val) {
+        data.forEach(function (val) {
           sum += val[currAttr]
         })
         average += (sum / data.length)
