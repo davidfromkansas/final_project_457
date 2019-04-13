@@ -7,3 +7,7 @@ html, body {
 .chkbx {
   padding: 10px;
 }
+
+div {
+  border-style: solid;
+}
