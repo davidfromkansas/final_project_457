@@ -8,6 +8,10 @@ html, body {
   padding: 10px;
 }
 
-div {
-  border-style: solid;
+.barchart-title {
+  text-align: center;
 }
+
+/* div {
+  border-style: solid;
+} */

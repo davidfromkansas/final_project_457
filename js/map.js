@@ -1,6 +1,7 @@
 Map = function (_subBoroughHandler, _attrEnum) {
   this.subBoroughHandler = _subBoroughHandler;
   this.attrEnum = _attrEnum;
+  this.subBorough1Selected = false;
   this.initVis();
 }
 
@@ -41,7 +42,18 @@ Map.prototype.initVis = function () {
           d3.select(this).attr("fill", "#0fb9b1")
         }).on("click", function (d) {
           var subboroughData = vis.gentrificationData[d.properties.subborough]
-          $(vis.subBoroughHandler).trigger("subBoroughSelected", subboroughData);
+          let subBoroughNum;
+          d3.select(this).attr("fill", "#fed330")
+          if(!vis.subBorough1Selected) {
+            subBoroughNum = 1;
+            vis.subBorough1Selected = true;
+          } else {
+            subBoroughNum = 2;
+            vis.subBorough1Selected = false;
+          }
+          console.log(d.properties.subborough + " subBoroughNum " + subBoroughNum);
+          $(vis.subBoroughHandler).trigger("subBoroughSelected",
+            {num: subBoroughNum, data: subboroughData, name: d.properties.subborough});
         });
     });
 }
@@ -52,7 +64,6 @@ Map.prototype.initVis = function () {
 Map.prototype.updateCurrentYear = function (newYear) {
   var vis = this;
   vis.currentYear = newYear
-  console.log(newYear)
 }
 
 
