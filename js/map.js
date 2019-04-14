@@ -79,10 +79,10 @@ Map.prototype.updateSelectedAttributes = function(selectedAttributes) {
 
 Map.prototype.updateVis = function() {
   var vis = this;
-  console.log(vis.currentYear);
-  console.log(vis.selectedAttributes);
+  // console.log(vis.currentYear);
+  // console.log(vis.selectedAttributes);
   var blueScale = d3.scaleOrdinal(d3.schemeBlues[9]);
-  console.log(vis.gentrificationData);
+  // console.log(vis.gentrificationData);
   // console.log(selectedAttributes);
 
   vis.svg.selectAll("path")
@@ -114,7 +114,7 @@ Map.prototype.updateVis = function() {
         // })
         // average += (sum / data.length);
       });
-      console.log(score);
+      // console.log(score);
       return blueScale(score);
     })
     .attr("stroke", function (d) {
