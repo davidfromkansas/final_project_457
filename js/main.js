@@ -14,6 +14,21 @@
     5: "racial_diversity_index"
   };
 
+  var yearEnum = {
+    2005: 0,
+    2006: 1,
+    2007: 2,
+    2008: 3,
+    2009: 4,
+    2010: 5,
+    2011: 6,
+    2012: 7,
+    2013: 8,
+    2014: 9,
+    2015: 10,
+    2016: 11
+  }
+
   // data: sub borough data
   // selectedAttr: int corresponding to attrEnum
   function getDomain(data, selectedAttr) {
@@ -45,7 +60,7 @@
 
     let alternate = 0; // delete when dropdowns are added
 
-    var map = new Map(subBoroughHandler, attrEnum);
+    var map = new Map(subBoroughHandler, attrEnum, yearEnum);
     var attrSelector = new AttributeSelector(map, attributeHandler);
     var barchart2 = new BarChart("q2", attrEnum, 2, true, true, attr1);
     var barchart1 = new BarChart("q1", attrEnum, 1, false, true, attr2);
@@ -67,7 +82,7 @@
     });
     $(attributeHandler).bind("attributeSelected", function (event, attr) {
       // update map and timeline
-      // map.updateVis(attr ? attr : []);
+      map.updateSelectedAttributes(attr ? attr : []);
       if(alternate) {
         alternate = 0
         attr1 = attr[0]

@@ -1,6 +1,7 @@
-Map = function (_subBoroughHandler, _attrEnum) {
+Map = function (_subBoroughHandler, _attrEnum, _yearEnum) {
   this.subBoroughHandler = _subBoroughHandler;
   this.attrEnum = _attrEnum;
+  this.yearEnum = _yearEnum;
   this.subBorough1Selected = false;
   this.initVis();
 }
@@ -12,6 +13,7 @@ Map.prototype.initVis = function () {
   vis.svg = d3.select("#subborough").append("svg").attr("width", window.innerWidth / 3).attr("height", window.innerHeight / 1);
 
   vis.currentYear = 2005; // 2005 is the default year
+  vis.selectedAttributes = ["3", "0"];
 
   d3.queue()
     .defer(d3.json, "data/data.json")
@@ -55,6 +57,7 @@ Map.prototype.initVis = function () {
           $(vis.subBoroughHandler).trigger("subBoroughSelected",
             {num: subBoroughNum, data: subboroughData, name: d.properties.subborough});
         });
+        vis.updateVis();
     });
 }
 
@@ -63,34 +66,56 @@ Map.prototype.initVis = function () {
 // Note: Whenever this function is called, we should also somehow call updateVis to update the map - DLT
 Map.prototype.updateCurrentYear = function (newYear) {
   var vis = this;
-  vis.currentYear = newYear
+  vis.currentYear = newYear;
+  vis.updateVis();
+}
+
+Map.prototype.updateSelectedAttributes = function(selectedAttributes) {
+  var vis = this;
+  vis.selectedAttributes = selectedAttributes;
+  vis.updateVis();
 }
 
 
-Map.prototype.updateVis = function (selectedAttributes) {
+Map.prototype.updateVis = function() {
   var vis = this;
-
+  console.log(vis.currentYear);
+  console.log(vis.selectedAttributes);
   var blueScale = d3.scaleOrdinal(d3.schemeBlues[9]);
   console.log(vis.gentrificationData);
+  // console.log(selectedAttributes);
 
-  vis.map.selectAll("path")
+  vis.svg.selectAll("path")
     .data(vis.geojson.features)
     .attr("fill", function (d) {
-      var average = 0;
-      var numAttributes = selectedAttributes.length;
+      // var average = 0;
+      // var numAttributes = vis.selectedAttributes.length;
+      var score = 0;
 
       // TODO: CHANGE HOW WE CALCULATE THE SCORE
       // CALCULATING SCORE HERE
-      selectedAttributes.forEach(function (attr) {
-        let data = vis.gentrificationData[d.properties.subborough][vis.attrEnum[attr]].normalized
-        let currAttr = vis.attrEnum[attr]
-        let sum = 0
-        data.forEach(function (val) {
-          sum += val[currAttr]
-        })
-        average += (sum / data.length)
-      })
-      return blueScale(average);
+
+      vis.selectedAttributes.forEach(function(attr) {
+        let data = vis.gentrificationData[d.properties.subborough][vis.attrEnum[attr]].normalized;
+        // console.log(data);
+        //if the two selected attributes aren't the same
+        if(vis.selectedAttributes[0] != vis.selectedAttributes[1]) {
+          //if the user has selected two viable attributes
+          if(attr != 0) {
+            score += data[vis.yearEnum[vis.currentYear]][vis.attrEnum[attr]];
+          }
+        } else {
+          score = data[vis.yearEnum[vis.currentYear]][vis.attrEnum[attr]];
+        }
+        // let currAttr = vis.attrEnum[attr];
+        // let sum = 0;
+        // data.forEach(function(val) {
+        //   sum += val[currAttr];
+        // })
+        // average += (sum / data.length);
+      });
+      console.log(score);
+      return blueScale(score);
     })
     .attr("stroke", function (d) {
       return ("black");

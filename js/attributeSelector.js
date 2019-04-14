@@ -7,21 +7,18 @@ function AttributeSelector(map, _attributeHandler) {
 
 AttributeSelector.prototype.init = function() {
     var vis = this;
-    //by default, the first attribute (median household income) is selected
-    var selectedAttributes = ["0"];
+    //by default, the third attribute (median_household_income) is selected
+    // var selectedAttributes = ["2"];
 
-    var checkboxes = document.getElementsByClassName("chkbx");
-    for(var i = 0; i < checkboxes.length; i++) {
-      checkboxes[i].firstElementChild.onchange = function() {
-        if(this.checked) {
-          selectedAttributes.push(this.value);
-        } else {
-          for(var i = 0; i < selectedAttributes.length; i++) {
-            if (selectedAttributes[i] === this.value) {
-             selectedAttributes.splice(i, 1);
-            }
-          }
+    var dropdowns = document.getElementsByClassName("dropdown");
+    for(var i = 0; i < dropdowns.length; i++) {
+      dropdowns[i].onchange = function() {
+        // console.log("CHANGED TO: " + this.value);
+        selectedAttributes = [];
+        for(var j = 0; j < dropdowns.length; j++) {
+          selectedAttributes.push(dropdowns[j].value);
         }
+        // console.log(selectedAttributes);
         $(vis.attributeHandler).trigger("attributeSelected", [selectedAttributes]);
       }
     }

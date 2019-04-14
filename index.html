@@ -14,14 +14,14 @@
     <h2>Attributes</h2>
     <div class="row">
       <!-- <div id="attrSelector"> -->
-      <div class="col-sm">
-        <label class="chkbx"><input type="checkbox" name="housing_units" value="0" checked /> Housing Units</label></br>
+      <!-- <div class="col-sm">
+        <label class="chkbx"><input type="checkbox" name="housing_units" value="0" /> Housing Units</label></br>
       </div>
       <div class="col-sm">
         <label class="chkbx"><input type="checkbox" name="mean_travel_time" value="1" /> Mean Travel Time</label></br>
       </div>
       <div class="col-sm">
-        <label class="chkbx"><input type="checkbox" name="median_household_income" value="2" /> Median Household
+        <label class="chkbx"><input type="checkbox" name="median_household_income" value="2" checked /> Median Household
           Income</label></br>
       </div>
       <div class="col-sm">
@@ -33,6 +33,27 @@
       <div class="col-sm">
         <label class="chkbx"><input type="checkbox" name="racial_diversity_index" value="4" /> Racial Diversity
           Index</label></br>
+      </div> -->
+      <div class="col-sm">
+        <select class="dropdown">
+          <option name="housing_units" value="1">Housing Units</option>
+          <option name="mean_travel_time" value="2">Mean Travel Time</option>
+          <option name="median_household_income" value="3" selected>Median Household Income</option>
+          <option name="median_rent" value="4">Median Rent</option>
+          <option name="population" value="5">Population</option>
+          <option name="racial_diversity_index" value="6">Racial Diversity Index</option>
+        </select></br>
+      </div>
+      <div class="col-sm">
+        <select class="dropdown">
+          <option name="none" value="0"></option>
+          <option name="housing_units" value="1">Housing Units</option>
+          <option name="mean_travel_time" value="2">Mean Travel Time</option>
+          <option name="median_household_income" value="3">Median Household Income</option>
+          <option name="median_rent" value="4">Median Rent</option>
+          <option name="population" value="5">Population</option>
+          <option name="racial_diversity_index" value="6">Racial Diversity Index</option>
+        </select></br>
       </div>
       <!-- </div> -->
     </div>
