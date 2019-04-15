@@ -136,9 +136,7 @@
       let selectedAttr = [attr1, attr2];
       let xDomain = attr2 === -1 ? [0, 1] : getDomain(subBorough1.data, subBorough2.data, attr)
       // need to update map behavior so that it handles switch to "None"
-      if(attr2 >= 0) {
-        map.updateSelectedAttributes(selectedAttr);
-      }
+      map.updateSelectedAttributes(selectedAttr);
       $("#subBorough2-title").empty().append("<h4 class=barchart-title>" + attrFormattedEnum[attr] +"</h4>")
 
       barchart1.attributeSelected(attr2, xDomain, subBorough1.data);
