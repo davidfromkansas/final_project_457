@@ -85,6 +85,7 @@
     $(subBoroughHandler).bind("subBoroughSelected", function (event, subBorough) {
       // update barcharts
       if(subBorough.num === 1) {
+        $(".y-axis-title2").text(subBorough.name)
         subBorough1 = subBorough;
         barchart2.subBoroughSelected(subBorough.data);
         if(attr2) {
@@ -92,6 +93,7 @@
         }
       } else {
         subBorough2 = subBorough;
+        $(".y-axis-title3").text(subBorough.name)
         barchart3.subBoroughSelected(subBorough.data);
         if(attr2) {
           barchart4.subBoroughSelected(subBorough.data);

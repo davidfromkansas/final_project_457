@@ -25,7 +25,7 @@ BarChart = function(_parentElement, _attrEnum, _quadrant, _displayY, _displayX, 
 
 BarChart.prototype.initVis = function(){
 	let vis = this;
-	vis.margin = { top: 0, right: 30, bottom: 25, left: 35 };
+	vis.margin = { top: 0, right: 30, bottom: 25, left: 55 };
   // if(vis.quadrant === 4) {
   //   vis.margin.bottom = 25;
   // }
@@ -68,6 +68,14 @@ BarChart.prototype.initVis = function(){
   if(vis.displayY) {
     vis.yAxis = d3.axisLeft()
   			.scale(vis.y);
+		vis.svg.append("text")
+			.attr("class", "y-axis-title"+vis.quadrant)
+			.attr("transform", "rotate(-90)")
+			.attr("y", 0-vis.margin.left)
+      .attr("x",0 - (vis.height / 2))
+			.attr("dy", "1em")
+			.style("text-anchor", "middle")
+			.text("Years");
     vis.svg.append("g")
         .attr("class", "y-axis")
   }
@@ -108,7 +116,7 @@ BarChart.prototype.updateVis = function(){
       .append("rect")
       .merge(bars)
       .attr("class", "bar"+vis.quadrant)
-      .attr("x", Math.abs(vis.margin.left - vis.margin.right - 2))
+      .attr("x", Math.abs(2))
       .attr("y", function(d) {
         return vis.y(d.year)
       })
@@ -118,7 +126,7 @@ BarChart.prototype.updateVis = function(){
         return vis.x(d[vis.selectedAttr])
       })
       .attr("height", vis.y.bandwidth() - 1)
-      .attr("fill", "#D1B894");
+      .attr("fill", "#DFCFBE");
   bars.exit().remove()
 
   if(vis.displayX && vis.selectedAttr) {
@@ -134,6 +142,7 @@ BarChart.prototype.updateVis = function(){
   }
   if(vis.displayY) {
     d3.selectAll(".y-axis").call(vis.yAxis);
+
   }
 }
 
