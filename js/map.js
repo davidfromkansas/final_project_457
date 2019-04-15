@@ -15,7 +15,7 @@ Map.prototype.initVis = function () {
               .attr("height", window.innerHeight / 1);
 
   vis.currentYear = 2005; // 2005 is the default year
-  vis.selectedAttributes = ["3", "0"];
+  vis.selectedAttributes = [2, -1];
 
   // https://bl.ocks.org/tiffylou/88f58da4599c9b95232f5c89a6321992
   var tooltip = d3.select("body").append("div")
@@ -125,15 +125,17 @@ Map.prototype.updateVis = function() {
       // CALCULATING SCORE HERE
 
       vis.selectedAttributes.forEach(function(attr) {
-        let data = vis.gentrificationData[d.properties.subborough][vis.attrEnum[attr]].normalized;
+
         // console.log(data);
         //if the two selected attributes aren't the same
         if(vis.selectedAttributes[0] != vis.selectedAttributes[1]) {
           //if the user has selected two viable attributes
-          if(attr != 0) {
+          if(attr != -1) {
+            let data = vis.gentrificationData[d.properties.subborough][vis.attrEnum[attr]].normalized;
             score += data[vis.yearEnum[vis.currentYear]][vis.attrEnum[attr]];
           }
         } else {
+          let data = vis.gentrificationData[d.properties.subborough][vis.attrEnum[attr]].normalized;
           score = data[vis.yearEnum[vis.currentYear]][vis.attrEnum[attr]];
         }
         // let currAttr = vis.attrEnum[attr];
