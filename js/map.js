@@ -10,7 +10,9 @@ Map = function (_subBoroughHandler, _attrEnum, _yearEnum) {
 Map.prototype.initVis = function () {
 
   var vis = this;
-  vis.svg = d3.select("#subborough").append("svg").attr("width", window.innerWidth / 3).attr("height", window.innerHeight / 1);
+  vis.svg = d3.select("#subborough")
+              .append("svg").attr("width", window.innerWidth / 3)
+              .attr("height", window.innerHeight / 1);
 
   vis.currentYear = 2005; // 2005 is the default year
   vis.selectedAttributes = ["3", "0"];
@@ -57,6 +59,13 @@ Map.prototype.initVis = function () {
           $(vis.subBoroughHandler).trigger("subBoroughSelected",
             {num: subBoroughNum, data: subboroughData, name: d.properties.subborough});
         });
+
+        let initSubBorough1 = "Borough Park",
+          initSubBorough2 = "East New York/Starrett City"
+        $(vis.subBoroughHandler).trigger("subBoroughSelected",
+          {num: 1, data: vis.gentrificationData[initSubBorough1], name: initSubBorough1});
+        $(vis.subBoroughHandler).trigger("subBoroughSelected",
+          {num: 2, data: vis.gentrificationData[initSubBorough2], name: initSubBorough2});
         vis.updateVis();
     });
 }
@@ -79,11 +88,8 @@ Map.prototype.updateSelectedAttributes = function(selectedAttributes) {
 
 Map.prototype.updateVis = function() {
   var vis = this;
-  // console.log(vis.currentYear);
-  // console.log(vis.selectedAttributes);
+
   var blueScale = d3.scaleOrdinal(d3.schemeBlues[9]);
-  // console.log(vis.gentrificationData);
-  // console.log(selectedAttributes);
 
   vis.svg.selectAll("path")
     .data(vis.geojson.features)

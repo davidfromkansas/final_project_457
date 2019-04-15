@@ -98,8 +98,20 @@ BarChart.prototype.updateVis = function(){
 	  return d[vis.selectedAttr];
 	});
 
-  // vis.x.domain([0 ,dataMax]);
   let bars = vis.svg.selectAll(".bar"+vis.quadrant).data(data)
+  bars.attr("x", Math.abs(vis.margin.left - vis.margin.right - 2))
+      .attr("y", function(d) {
+        return vis.y(d.year)
+      })
+      .transition()
+      .duration(500)
+      .attr("width", function(d) {
+        return vis.x(d[vis.selectedAttr])
+      })
+      .attr("height", vis.y.bandwidth() - 1)
+      .attr("stroke", "steelblue")
+      .attr("stroke-width", 2)
+      .attr("fill", "steelblue");
   bars.enter()
       .append("rect")
       .merge(bars)
@@ -108,6 +120,8 @@ BarChart.prototype.updateVis = function(){
       .attr("y", function(d) {
         return vis.y(d.year)
       })
+      .transition()
+      .duration(500)
       .attr("width", function(d) {
         return vis.x(d[vis.selectedAttr])
       })
@@ -115,8 +129,10 @@ BarChart.prototype.updateVis = function(){
       .attr("stroke", "steelblue")
       .attr("stroke-width", 2)
       .attr("fill", "steelblue");
+  bars.exit().remove()
 
   if(vis.displayX) {
+    vis.xAxis.ticks(5)
     d3.selectAll(".x-axis").call(vis.xAxis);
   }
   if(vis.displayY) {
@@ -134,10 +150,11 @@ BarChart.prototype.subBoroughSelected = function(subBorough){
 	}
 }
 
-BarChart.prototype.attributeSelected = function(attr, xDomain){
+BarChart.prototype.attributeSelected = function(attr, xDomain, subBorough){
 	var vis = this;
   vis.selectedAttr = vis.attrEnum[attr];
   vis.x.domain(xDomain);
-  // console.log(vis.selectedAttr, vis.quadrant);
+  vis.selectedData = subBorough;
+  console.log(vis.selectedAttr, vis.quadrant);
   vis.wrangleData();
 }

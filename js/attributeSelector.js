@@ -11,15 +11,10 @@ AttributeSelector.prototype.init = function() {
     // var selectedAttributes = ["2"];
 
     var dropdowns = document.getElementsByClassName("dropdown");
-    for(var i = 0; i < dropdowns.length; i++) {
+    for(let i = 0; i < dropdowns.length; i++) {
       dropdowns[i].onchange = function() {
-        // console.log("CHANGED TO: " + this.value);
-        selectedAttributes = [];
-        for(var j = 0; j < dropdowns.length; j++) {
-          selectedAttributes.push(dropdowns[j].value);
-        }
-        // console.log(selectedAttributes);
-        $(vis.attributeHandler).trigger("attributeSelected", [selectedAttributes]);
+        let selectedAttribute = dropdowns[i].options[dropdowns[i].selectedIndex].value-1;
+        $(vis.attributeHandler).trigger("attributeSelected" + (i+1), selectedAttribute);
       }
     }
 }
