@@ -14,6 +14,7 @@ BarChart = function(_parentElement, _attrEnum, _quadrant, _displayY, _displayX, 
   this.displayY = _displayY;
   this.displayX = _displayX;
   this.selectedAttr = this.attrEnum[_attr]
+	this.xAxisClass = "x-axis"+this.quadrant
   this.initVis();
 }
 
@@ -23,9 +24,11 @@ BarChart = function(_parentElement, _attrEnum, _quadrant, _displayY, _displayX, 
  */
 
 BarChart.prototype.initVis = function(){
-	var vis = this;
-
+	let vis = this;
 	vis.margin = { top: 0, right: 30, bottom: 25, left: 35 };
+  // if(vis.quadrant === 4) {
+  //   vis.margin.bottom = 25;
+  // }
   if(!vis.displayX) {
     vis.margin.top += vis.margin.bottom - 5
     vis.margin.bottom = 5
@@ -35,7 +38,7 @@ BarChart.prototype.initVis = function(){
     // vis.margin.right = 10
   }
   vis.width = $("#" + vis.parentElement).width() - vis.margin.left - vis.margin.right,
-  vis.height = ($("#grid").height()/2) - vis.margin.top - vis.margin.bottom;
+  vis.height = ($("#grid").height()/2.7) - vis.margin.top - vis.margin.bottom;
 
 	// SVG drawing area
 	vis.svg = d3.select("#" + vis.parentElement).append("svg")
@@ -58,7 +61,7 @@ BarChart.prototype.initVis = function(){
     vis.xAxis = d3.axisBottom()
         .scale(vis.x);
     vis.svg.append("g")
-  			.attr("class", "x-axis axis")
+  			.attr("class", vis.xAxisClass)
   			.attr("transform", "translate(0," + vis.height + ")")
   }
 
@@ -66,7 +69,7 @@ BarChart.prototype.initVis = function(){
     vis.yAxis = d3.axisLeft()
   			.scale(vis.y);
     vis.svg.append("g")
-        .attr("class", "y-axis axis")
+        .attr("class", "y-axis")
   }
 }
 
@@ -77,8 +80,14 @@ BarChart.prototype.initVis = function(){
  */
 
 BarChart.prototype.wrangleData = function(){
-	var vis = this;
-  vis.displayData = vis.selectedData[vis.selectedAttr].actual;
+	let vis = this;
+	if(!vis.selectedAttr) {
+		vis.displayData = []
+		d3.select("."+vis.xAxisClass).remove();
+		vis.removedAxis = true;
+	} else {
+		vis.displayData = vis.selectedData[vis.selectedAttr].actual;
+	}
 	// Update the visualization
 	vis.updateVis();
 }
@@ -91,27 +100,10 @@ BarChart.prototype.wrangleData = function(){
  */
 
 BarChart.prototype.updateVis = function(){
-	var vis = this;
+	let vis = this;
   let data = vis.displayData;
 
-	var dataMax = d3.max(data, function(d) {
-	  return d[vis.selectedAttr];
-	});
-
   let bars = vis.svg.selectAll(".bar"+vis.quadrant).data(data)
-  bars.attr("x", Math.abs(vis.margin.left - vis.margin.right - 2))
-      .attr("y", function(d) {
-        return vis.y(d.year)
-      })
-      .transition()
-      .duration(500)
-      .attr("width", function(d) {
-        return vis.x(d[vis.selectedAttr])
-      })
-      .attr("height", vis.y.bandwidth() - 1)
-      .attr("stroke", "steelblue")
-      .attr("stroke-width", 2)
-      .attr("fill", "steelblue");
   bars.enter()
       .append("rect")
       .merge(bars)
@@ -126,14 +118,19 @@ BarChart.prototype.updateVis = function(){
         return vis.x(d[vis.selectedAttr])
       })
       .attr("height", vis.y.bandwidth() - 1)
-      .attr("stroke", "steelblue")
-      .attr("stroke-width", 2)
-      .attr("fill", "steelblue");
+      .attr("fill", "#D1B894");
   bars.exit().remove()
 
-  if(vis.displayX) {
+  if(vis.displayX && vis.selectedAttr) {
+		if(vis.removedAxis) {
+			vis.xAxis = d3.axisBottom()
+	        .scale(vis.x);
+	    vis.svg.append("g")
+	  			.attr("class", vis.xAxisClass)
+	  			.attr("transform", "translate(0," + vis.height + ")")
+		}
     vis.xAxis.ticks(5)
-    d3.selectAll(".x-axis").call(vis.xAxis);
+    d3.select("." + vis.xAxisClass).call(vis.xAxis);
   }
   if(vis.displayY) {
     d3.selectAll(".y-axis").call(vis.yAxis);
@@ -141,20 +138,18 @@ BarChart.prototype.updateVis = function(){
 }
 
 BarChart.prototype.subBoroughSelected = function(subBorough){
-	var vis = this;
+	let vis = this;
 	if(vis.selectedAttr) {
 		vis.selectedData = subBorough;
 	  vis.wrangleData();
-	} else {
-		alert("Please select an attribute");
 	}
 }
 
 BarChart.prototype.attributeSelected = function(attr, xDomain, subBorough){
-	var vis = this;
+	let vis = this;
   vis.selectedAttr = vis.attrEnum[attr];
   vis.x.domain(xDomain);
   vis.selectedData = subBorough;
-  console.log(vis.selectedAttr, vis.quadrant);
+	// console.log(vis.quadrant);
   vis.wrangleData();
 }

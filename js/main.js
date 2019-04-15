@@ -15,6 +15,7 @@
   };
 
   var attrFormattedEnum = {
+    "-1": "No Attribute Selected",
     0: "Housing Units",
     1: "Mean Travel Time",
     2: "Median Household Income",
@@ -43,7 +44,6 @@
   function getDomain(data1, data2, selectedAttr) {
     // get min
     let attr = attrEnum[selectedAttr]
-    console.log(data1[attr].actual);
     let minVal1 = d3.min(data1[attr].actual, function(d) {
   	  return d[attr];
   	});
@@ -83,7 +83,6 @@
     var yearSlider = new YearSlider(map);
 
     $(subBoroughHandler).bind("subBoroughSelected", function (event, subBorough) {
-      let xDomain1, xDomain2;
       // update barcharts
       if(subBorough.num === 1) {
         subBorough1 = subBorough;
@@ -99,44 +98,49 @@
         }
       }
 
+      let xDomain1, xDomain2;
       if(subBorough1 && subBorough2) {
         xDomain1 = getDomain(subBorough1.data, subBorough2.data, attr1)
         barchart2.attributeSelected(attr1, xDomain1, subBorough1.data);
         barchart3.attributeSelected(attr1, xDomain1, subBorough2.data);
-        if(attr2) {
+        if(attr2 >= 0) {
           xDomain2 = getDomain(subBorough1.data, subBorough2.data, attr2)
           barchart1.attributeSelected(attr2, xDomain2, subBorough1.data);
           barchart4.attributeSelected(attr2, xDomain2, subBorough2.data);
         }
       }
     });
+
     $(attributeHandler).bind("attributeSelected1", function (event, attr) {
       // update map and timeline
+      $("#dropdownMenuButton1").text(attrFormattedEnum[attr])
       attr1 = attr;
       let selectedAttr = [attr1];
       if(attr2) {
           selectedAttr = [attr1, attr2]
       }
+      let xDomain = getDomain(subBorough1.data, subBorough2.data, attr1)
       map.updateSelectedAttributes(selectedAttr);
       $("#subBorough1-title").empty().append("<h4 class=barchart-title>" + attrFormattedEnum[attr] +"</h4>")
-      let xDomain = getDomain(subBorough1.data, subBorough2.data, attr)
-      console.log("attr1", xDomain);
-      barchart2.attributeSelected(attr, xDomain, subBorough1.data);
-      barchart3.attributeSelected(attr, xDomain, subBorough2.data);
+
+      barchart2.attributeSelected(attr1, xDomain, subBorough1.data);
+      barchart3.attributeSelected(attr1, xDomain, subBorough2.data);
     });
+
     $(attributeHandler).bind("attributeSelected2", function (event, attr) {
       // update map and timeline
+      $("#dropdownMenuButton2").text(attrFormattedEnum[attr])
       attr2 = attr;
-      let selectedAttr = [attr2];
-      if(attr1) {
-          selectedAttr = [attr1, attr2]
+      let selectedAttr = [attr1, attr2];
+      let xDomain = attr2 === -1 ? [0, 1] : getDomain(subBorough1.data, subBorough2.data, attr)
+      // need to update map behavior so that it handles switch to "None"
+      if(attr2 >= 0) {
+        map.updateSelectedAttributes(selectedAttr);
       }
-      map.updateSelectedAttributes(selectedAttr);
       $("#subBorough2-title").empty().append("<h4 class=barchart-title>" + attrFormattedEnum[attr] +"</h4>")
-      let xDomain = getDomain(subBorough1.data, subBorough2.data, attr)
-      console.log("attr2", xDomain);
-      barchart1.attributeSelected(attr, xDomain, subBorough1.data);
-      barchart4.attributeSelected(attr, xDomain, subBorough2.data);
+
+      barchart1.attributeSelected(attr2, xDomain, subBorough1.data);
+      barchart4.attributeSelected(attr2, xDomain, subBorough2.data);
     });
   }
 

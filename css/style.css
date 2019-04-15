@@ -2,7 +2,22 @@ html, body {
   /* below two lines prevent user from scrolling left and right within the webpage (made it weird) */
   max-width: 100%;
   overflow-x: hidden;
+  padding-left: 2px;
 }
+
+h1 {
+	font-size: 36px;
+	color: #3D9970;
+	margin-top: 10px;
+}
+
+h2 {
+	color: #A9754F;
+	font-size: 24px;
+	margin-top: 10px;
+	/* margin-bottom: 30px; */
+}
+
 
 .chkbx {
   padding: 10px;
@@ -10,6 +25,30 @@ html, body {
 
 .barchart-title {
   text-align: center;
+}
+
+.btn-secondary {
+  border: none; /*https://stackoverflow.com/questions/36756901/how-to-remove-bootstrap-dropdown-container*/
+  color: black;
+  transition: all 0.5s ease; /*https://css-tricks.com/almanac/properties/t/transition/*/
+  background:transparent;
+}
+
+.btn-secondary:hover {
+  color: black;
+  background: #F5F5F5;
+}
+
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  width: 80px;
+  height: 14px;
+  padding: 2px;
+  font: 12px sans-serif;
+  background: #fff;
+  border: 0px;
+  pointer-events: none;
 }
 
 /* div {

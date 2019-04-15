@@ -13,39 +13,39 @@
   <div>
     <h2>Attributes</h2>
     <div class="row">
-      <!-- <div id="attrSelector"> -->
-      <!-- <div class="col-sm">
-        <label class="chkbx"><input type="checkbox" name="housing_units" value="0" /> Housing Units</label></br>
+      <div class="col-sm">
+        <div class="dropdown">
+          <span><b>Attribute 1: </b></span>
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Median Household Income
+          </button>
+          <div class="dropdown-menu" id="attr1-selector" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" name="housing_units" value="1">Housing Units</a>
+            <a class="dropdown-item" name="mean_travel_time" value="2">Mean Travel Time</a>
+            <a class="dropdown-item" name="median_household_income" value="3">Median Household Income</a>
+            <a class="dropdown-item" name="median_rent" value="4">Median Rent</a>
+            <a class="dropdown-item" name="population" value="5">Population</a>
+            <a class="dropdown-item" name="racial_diversity_index" value="6">Racial Diversity Index</a>
+          </div>
+        </div>
       </div>
       <div class="col-sm">
-        <label class="chkbx"><input type="checkbox" name="mean_travel_time" value="1" /> Mean Travel Time</label></br>
-      </div>
-      <div class="col-sm">
-        <label class="chkbx"><input type="checkbox" name="median_household_income" value="2" checked /> Median Household
-          Income</label></br>
-      </div>
-      <div class="col-sm">
-        <label class="chkbx"><input type="checkbox" name="median_rent" value="3" /> Median Rent</label></br>
-      </div>
-      <div class="col-sm">
-        <label class="chkbx"><input type="checkbox" name="population" value="4" /> Population</label></br>
-      </div>
-      <div class="col-sm">
-        <label class="chkbx"><input type="checkbox" name="racial_diversity_index" value="4" /> Racial Diversity
-          Index</label></br>
-      </div> -->
-      <div class="col-sm">
-        <select class="dropdown">
-          <option name="housing_units" value="1">Housing Units</option>
-          <option name="mean_travel_time" value="2">Mean Travel Time</option>
-          <option name="median_household_income" value="3" selected>Median Household Income</option>
-          <option name="median_rent" value="4">Median Rent</option>
-          <option name="population" value="5">Population</option>
-          <option name="racial_diversity_index" value="6">Racial Diversity Index</option>
-        </select></br>
-      </div>
-      <div class="col-sm">
-        <select class="dropdown">
+        <div class="dropdown">
+          <span><b>Attribute 2: </b></span>
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            No Attribute Selected
+          </button>
+          <div class="dropdown-menu" id="attr2-selector" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" name="none" value="0">None</a>
+            <a class="dropdown-item" name="housing_units" value="1">Housing Units</a>
+            <a class="dropdown-item" name="mean_travel_time" value="2">Mean Travel Time</a>
+            <a class="dropdown-item" name="median_household_income" value="3">Median Household Income</a>
+            <a class="dropdown-item" name="median_rent" value="4">Median Rent</a>
+            <a class="dropdown-item" name="population" value="5">Population</a>
+            <a class="dropdown-item" name="racial_diversity_index" value="6">Racial Diversity Index</a>
+          </div>
+        </div>
+        <!-- <select class="dropdown">
           <option name="none" value="0"></option>
           <option name="housing_units" value="1">Housing Units</option>
           <option name="mean_travel_time" value="2">Mean Travel Time</option>
@@ -53,20 +53,20 @@
           <option name="median_rent" value="4">Median Rent</option>
           <option name="population" value="5">Population</option>
           <option name="racial_diversity_index" value="6">Racial Diversity Index</option>
-        </select></br>
+        </select></br> -->
       </div>
-      <!-- </div> -->
     </div>
   </div>
 
   <div class="row">
     <div class="col-md-auto">
-      <h1>Neighborhoods</h1>
-
-      <div id="subborough">
-
+      <div class="row" id="summary">
+        <div class="col">
+          <h5 id="title"></h5>
+        </div>
       </div>
-      <!-- <svg id="subborough" width="700" height="550"></svg> -->
+
+      <div id="subborough"></div>
       <div id="slider">
         <h3>Select a year: <b id="yearSelected">2005</b></h3>
       </div>
@@ -86,14 +86,7 @@
       </div>
     </div>
   </div>
-
-  <div class="row" id="summary">
-    <div class="col">
-      <h1 id="title"></h1>
-    </div>
-  </div>
 </body>
-
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
   integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

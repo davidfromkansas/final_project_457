@@ -8,14 +8,19 @@ Map = function (_subBoroughHandler, _attrEnum, _yearEnum) {
 
 
 Map.prototype.initVis = function () {
-
   var vis = this;
+
   vis.svg = d3.select("#subborough")
               .append("svg").attr("width", window.innerWidth / 3)
               .attr("height", window.innerHeight / 1);
 
   vis.currentYear = 2005; // 2005 is the default year
   vis.selectedAttributes = ["3", "0"];
+
+  // https://bl.ocks.org/tiffylou/88f58da4599c9b95232f5c89a6321992
+  var tooltip = d3.select("body").append("div")
+        .attr("class", "tooltip")
+        .style("opacity", 0);
 
   d3.queue()
     .defer(d3.json, "data/data.json")
@@ -42,8 +47,22 @@ Map.prototype.initVis = function () {
           d3.select(this).attr("fill", "#fed330")
           var subboroughData = vis.gentrificationData[d.properties.subborough]
           d3.select("#title").text(d.properties.subborough)
+          tooltip.transition()
+            .duration(200)
+            .style("opacity", .9);
+
+          tooltip.html(d.properties.name)
+            .style("left", (d3.event.pageX) + "px")
+            .style("top", (d3.event.pageY - 28) + "px");
+
+
         }).on("mouseout", function () {
           d3.select(this).attr("fill", "#0fb9b1")
+
+          tooltip.transition()
+            .duration(500)
+            .style("opacity", 0);
+
         }).on("click", function (d) {
           var subboroughData = vis.gentrificationData[d.properties.subborough]
           let subBoroughNum;
@@ -55,7 +74,6 @@ Map.prototype.initVis = function () {
             subBoroughNum = 2;
             vis.subBorough1Selected = false;
           }
-          console.log(d.properties.subborough + " subBoroughNum " + subBoroughNum);
           $(vis.subBoroughHandler).trigger("subBoroughSelected",
             {num: subBoroughNum, data: subboroughData, name: d.properties.subborough});
         });
@@ -66,6 +84,11 @@ Map.prototype.initVis = function () {
           {num: 1, data: vis.gentrificationData[initSubBorough1], name: initSubBorough1});
         $(vis.subBoroughHandler).trigger("subBoroughSelected",
           {num: 2, data: vis.gentrificationData[initSubBorough2], name: initSubBorough2});
+
+        vis.color = d3.scaleLinear()
+      								.domain([0, 1])
+      								.range([d3.rgb("#FFFFFF"), d3.rgb('#3D9970')]);
+
         vis.updateVis();
     });
 }
@@ -120,7 +143,8 @@ Map.prototype.updateVis = function() {
         // })
         // average += (sum / data.length);
       });
-      // console.log(score);
+      // return vis.color(score)
+      // return vis.color(vis.gentrificationData[d.properties.subborough]);
       return blueScale(score);
     })
     .attr("stroke", function (d) {

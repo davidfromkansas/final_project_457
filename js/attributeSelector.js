@@ -7,14 +7,13 @@ function AttributeSelector(map, _attributeHandler) {
 
 AttributeSelector.prototype.init = function() {
     var vis = this;
-    //by default, the third attribute (median_household_income) is selected
-    // var selectedAttributes = ["2"];
-
-    var dropdowns = document.getElementsByClassName("dropdown");
-    for(let i = 0; i < dropdowns.length; i++) {
-      dropdowns[i].onchange = function() {
-        let selectedAttribute = dropdowns[i].options[dropdowns[i].selectedIndex].value-1;
-        $(vis.attributeHandler).trigger("attributeSelected" + (i+1), selectedAttribute);
-      }
-    }
+    // by default, the third attribute (median_household_income) is selected
+    $("#attr1-selector a").click(function() {
+      let selectedAttribute = $(this).attr("value")-1;
+      $(vis.attributeHandler).trigger("attributeSelected1", selectedAttribute);
+    })
+    $("#attr2-selector a").click(function() {
+      let selectedAttribute = $(this).attr("value")-1;
+      $(vis.attributeHandler).trigger("attributeSelected2", selectedAttribute);
+    })
 }
