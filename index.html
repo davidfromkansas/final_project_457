@@ -8,15 +8,61 @@
 </head>
 
 <body>
-  <h1>Gentrification in New York City</h1>
+  <h1>Understanding Gentrification in New York City</h1>
+  <p>It’s no debate that gentrification is transforming New York City everyday. The question, however, is whether or not
+    gentrification is hurting or improving the lives of the City’s 8 million inhabitants. This question has been the
+    source of endless debate as city officials try to decide on the best urban legislation for their constituents. To
+    add productive commentary to this debate, we aim to show the impact of gentrification based on different key metrics
+    that are indicators of gentrification. This project will serve to educate the common public
+    about gentrification and hopefully inspire others to understand the impact of gentrification in their own
+    communities.
+  </p>
+  <hr />
+
+  <h2><a id="gentrificationIndicator" href="proposal/proposal.html"> Our Process Book</a></h2>
+  <hr />
+
+  <h2><a id="gentrificationIndicator" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+      aria-controls="collapseExample">
+      Indicators of Gentrification
+    </a></h2>
+  <div class="collapse" id="collapseExample">
+    <p>To understand how Gentrification is affecting New York City, we have selected 6 attributes that are
+      strong
+      indicators of Gentrification. Below, is our justification for each attribute:</p>
+    <ul>
+      <li><b>Housing Units:</b> A limited housing supply for a growing population often results in rising rent. In turn
+        this affects low-income households who are the least likely to keep up with the rising costs of living in the
+        city.</li>
+      <li><b>Mean Travel Time:</b> Long commute times could be reasoning for people to move from the suburbs to the city
+        in order to shorten the time they spend everyday going to and from work. </li>
+      <li><b>Median Household Income:</b> Higher household income is a consequence of having more affluent people moving
+        into a specific area. This causes consumer preferences for an area to shift upwards, inviting more businesses
+        that
+        cater to the wealthy.</li>
+      <li><b>Median Rent:</b> Higher rent is a leading cause for low-income families to move out of an area.</li>
+      <li><b>Population:</b> Growing populations are an overall indicator of gentrification because there is likely to
+        be
+        a reason for why large amounts of people would want to move into an already densely-packed area like NYC</li>
+      <li><b>Racial Diversity Index:</b> The RDI is the probability that two randomly chosen people in a given
+        geographic
+        area will be of a different race. Decreasing levels of diversity in a neighborhood have historically been
+        associated with a rise in gentrification.</li>
+
+
+    </ul>
+  </div>
   <!-- <h2>To view process book, click <a href="proposal/proposal.html">here</a></h2> -->
+
+  <hr />
   <div>
-    <h2>Attributes</h2>
+    <h2>Select Up to 2 Attributes to compare:</h2>
     <div class="row">
       <div class="col-sm">
         <div class="dropdown">
           <span><b>Attribute 1: </b></span>
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Median Household Income
           </button>
           <div class="dropdown-menu" id="attr1-selector" aria-labelledby="dropdownMenuButton">
@@ -32,7 +78,8 @@
       <div class="col-sm">
         <div class="dropdown">
           <span><b>Attribute 2: </b></span>
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             No Attribute Selected
           </button>
           <div class="dropdown-menu" id="attr2-selector" aria-labelledby="dropdownMenuButton">
@@ -45,6 +92,9 @@
             <a class="dropdown-item" name="racial_diversity_index" value="6">Racial Diversity Index</a>
           </div>
         </div>
+        <br />
+        <br />
+
         <!-- <select class="dropdown">
           <option name="none" value="0"></option>
           <option name="housing_units" value="1">Housing Units</option>
@@ -66,9 +116,10 @@
         </div>
       </div>
 
-      <div id="subborough"></div>
-      <div id="slider">
-        <h3>Select a year: <b id="yearSelected">2005</b></h3>
+      <div id="subborough">
+        <div id="slider">
+          <!-- <h5>Select a year: <b id="yearSelected">2005</b></h5> -->
+        </div>
       </div>
     </div>
     <div class="col" id="grid">
@@ -86,6 +137,8 @@
       </div>
     </div>
   </div>
+  <hr />
+
 </body>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

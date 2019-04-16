@@ -117,4 +117,42 @@
     currently we are just averaging the values of whatever metrics are selected. One feature that we weren't yet able to
     implement was the timeline feature that allows users to explore NYC data across multiple years. We hope to have this
     feature in the next iteration.</p>
+
+
+  <br />
+  <br />
+
+
+  <h2>Milestone Two</h2>
+  <img src="milestone_two.png" id="five" />
+  <p>By now, we have implemented all of our core goals we stated that we would achieve at the beginning of this project.
+    Our visualization consists of four main features that work together to help users look at trends in gentrification.
+    Users begin by selecting up to two gentrification attributes from the two dropdown menus at the top of our
+    visualization. After selecting up to two subboroughs from the GeoJSON map below, data from 2005-2016 will be
+    displayed in bar charts to the right of the map. Users can change the year for the data displayed using a slider
+    control. For the bar chart visualization, the top two quadrants will
+    represent the data for a specific subborough A, while the bottom two quadrants will represent the other selected
+    Subborough B.
+  </p>
+  <p>The purpose of the GeoJSON map is not just to allow users to select specififc subboroughs they want to investigate,
+    but also to help users see how some subboroughs might be more gentrified than others. We do this by normalizing the
+    dataset from NYU and then adding these normalized values together to generate a "gentrification score", where a
+    higher score means that there is more gentrification in an area. For example, if a user has selected the attributes
+    "Median Household Income" and "Median Rent" for the year 2009, then our visual will get the appropriate normalized
+    values for each attribute and add them together. The resulting sum will then be applied to a color scale and used to
+    color the each subborough on the map. Darker colors will mean higher sums and more gentrification happening.</p>
+
+  <p>
+    Originally, we had wanted to create a timeseries line chart that displays the data for multiple attributes. We were
+    unable to follow through with this idea, however, as different attribute had different units of measure (ex. dollars
+    vs housing units). This led to inconsistent y-axes being constructed. Additionally, if we had a timeseries chart
+    with two y-axes, each of different measure, this could lead to users identifying faulty trends in data that never
+    existed in the first place. Our alternative solution, which ended up being
+    better, is the 4-quadrant bar chart you see now. Users are still able to compare multiple attributes across
+    different subboroughs, all while addressing the issue of different attributes having different units of measure.
+    Based on the above screenshot, users can easily compare the Median Household Income of Starrett City and Borough
+    Park, while at the same time also being able to look at the data concerning the population of both subboroughs.
+    Because we keep the axes for each attribute seperate, users will not accidentially mis-identify trends in our data,
+    compared to our previous line chart idea.
+  </p>
 </body>

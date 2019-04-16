@@ -5,6 +5,17 @@ html, body {
   padding-left: 2px;
 }
 
+#gentrificationIndicator{
+  text-decoration: none;
+  color:inherit;
+
+}
+
+#gentrificationIndicator:hover{
+  text-decoration: underline;
+}
+
+
 h1 {
 	font-size: 36px;
 	color: #3D9970;

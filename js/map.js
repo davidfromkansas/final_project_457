@@ -11,16 +11,16 @@ Map.prototype.initVis = function () {
   var vis = this;
 
   vis.svg = d3.select("#subborough")
-              .append("svg").attr("width", window.innerWidth / 3)
-              .attr("height", window.innerHeight / 1);
+    .append("svg").attr("width", window.innerWidth / 3)
+    .attr("height", window.innerHeight / 1);
 
   vis.currentYear = 2005; // 2005 is the default year
   vis.selectedAttributes = [2, -1];
 
   // https://bl.ocks.org/tiffylou/88f58da4599c9b95232f5c89a6321992
   var tooltip = d3.select("body").append("div")
-        .attr("class", "tooltip")
-        .style("opacity", 0);
+    .attr("class", "tooltip")
+    .style("opacity", 0);
 
   d3.queue()
     .defer(d3.json, "data/data.json")
@@ -34,7 +34,7 @@ Map.prototype.initVis = function () {
       var path = d3.geoPath().projection(d3.geoConicConformal()
         .parallels([33, 45])
         .rotate([96, -39])
-        .fitSize([window.innerWidth / 3, window.innerHeight], vis.geojson));
+        .fitSize([window.innerWidth / 3, (3 * window.innerHeight) / 5], vis.geojson));
 
       vis.svg.selectAll("path")
         .data(vis.geojson.features)
@@ -67,7 +67,7 @@ Map.prototype.initVis = function () {
           var subboroughData = vis.gentrificationData[d.properties.subborough]
           let subBoroughNum;
           d3.select(this).attr("fill", "#fed330")
-          if(!vis.subBorough1Selected) {
+          if (!vis.subBorough1Selected) {
             subBoroughNum = 1;
             vis.subBorough1Selected = true;
           } else {
@@ -75,21 +75,21 @@ Map.prototype.initVis = function () {
             vis.subBorough1Selected = false;
           }
           $(vis.subBoroughHandler).trigger("subBoroughSelected",
-            {num: subBoroughNum, data: subboroughData, name: d.properties.subborough});
+            { num: subBoroughNum, data: subboroughData, name: d.properties.subborough });
         });
 
-        let initSubBorough1 = "Borough Park",
-          initSubBorough2 = "East New York/Starrett City"
-        $(vis.subBoroughHandler).trigger("subBoroughSelected",
-          {num: 1, data: vis.gentrificationData[initSubBorough1], name: initSubBorough1});
-        $(vis.subBoroughHandler).trigger("subBoroughSelected",
-          {num: 2, data: vis.gentrificationData[initSubBorough2], name: initSubBorough2});
+      let initSubBorough1 = "Borough Park",
+        initSubBorough2 = "East New York/Starrett City"
+      $(vis.subBoroughHandler).trigger("subBoroughSelected",
+        { num: 1, data: vis.gentrificationData[initSubBorough1], name: initSubBorough1 });
+      $(vis.subBoroughHandler).trigger("subBoroughSelected",
+        { num: 2, data: vis.gentrificationData[initSubBorough2], name: initSubBorough2 });
 
-        vis.color = d3.scaleLinear()
-      								.domain([0, 1])
-      								.range([d3.rgb("#FFFFFF"), d3.rgb('#3D9970')]);
+      vis.color = d3.scaleLinear()
+        .domain([0, 1])
+        .range([d3.rgb("#FFFFFF"), d3.rgb('#3D9970')]);
 
-        vis.updateVis();
+      vis.updateVis();
     });
 }
 
@@ -102,14 +102,14 @@ Map.prototype.updateCurrentYear = function (newYear) {
   vis.updateVis();
 }
 
-Map.prototype.updateSelectedAttributes = function(selectedAttributes) {
+Map.prototype.updateSelectedAttributes = function (selectedAttributes) {
   var vis = this;
   vis.selectedAttributes = selectedAttributes;
   vis.updateVis();
 }
 
 
-Map.prototype.updateVis = function() {
+Map.prototype.updateVis = function () {
   var vis = this;
 
   var blueScale = d3.scaleOrdinal(d3.schemeBlues[9]);
@@ -124,13 +124,13 @@ Map.prototype.updateVis = function() {
       // TODO: CHANGE HOW WE CALCULATE THE SCORE
       // CALCULATING SCORE HERE
 
-      vis.selectedAttributes.forEach(function(attr) {
+      vis.selectedAttributes.forEach(function (attr) {
 
         // console.log(data);
         //if the two selected attributes aren't the same
-        if(vis.selectedAttributes[0] != vis.selectedAttributes[1]) {
+        if (vis.selectedAttributes[0] != vis.selectedAttributes[1]) {
           //if the user has selected two viable attributes
-          if(attr != -1) {
+          if (attr != -1) {
             let data = vis.gentrificationData[d.properties.subborough][vis.attrEnum[attr]].normalized;
             score += data[vis.yearEnum[vis.currentYear]][vis.attrEnum[attr]];
           }
