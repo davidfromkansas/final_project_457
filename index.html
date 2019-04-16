@@ -55,6 +55,28 @@
   <!-- <h2>To view process book, click <a href="proposal/proposal.html">here</a></h2> -->
 
   <hr />
+  <h2><a id="gentrificationIndicator" data-toggle="collapse" href="#mapping" role="button" aria-expanded="false"
+      aria-controls="collapseExample">
+      Mapping Gentrification in NYC
+    </a></h2>
+  <div class="collapse" id="mapping">
+    <p>Using the data from NYU's Furman Center for Urban Policy, our visualization colors a map of the subboroughs of
+      NYC certain shades of blue depending how "much" gentrification there is going on in a certain area. Darker colored
+      subboroughs are supposed to be impacted more by gentrification than lighter colorerd areas.</p>
+
+    <b><i>So how do we decide which subboroughs are more gentrified than others?</i></b>
+    <p>We've normalized all the data from NYU so that each value, regardless of attribute, is between 0 and 1. We then
+      add the normalized values from the selected attributes and year to generate a sum that represents a
+      "Gentrification Score". A higher score will correspond to a darker color on the color scale. We recognize that not
+      all attributes are positively correlated with the amount of gentrification going on in a certain area. Consider
+      the "Housing Units" attribute, for example. More housing units indicates more supply, which can lead to lower rent
+      and more affordable housing. Less housing units, however, can lead to more gentrification as this can cause higher
+      rent and more displaced people. For metrics like this, we simply find the normalized value for metrix x and take
+      its complement
+      (1 - x).</p>
+
+  </div>
+  <hr />
   <div>
     <h2>Select Up to 2 Attributes to compare:</h2>
     <div class="row">
