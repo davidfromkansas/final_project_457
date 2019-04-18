@@ -73,7 +73,7 @@
     let subBorough1, subBorough2;
     // user will always have at least one attribute selected
     let attr1 = 2, attr2;
-    $("#subBorough1-title").empty().append("<h4 class=barchart-title>" + attrFormattedEnum[attr1] +"</h4>")
+    $("#attr1-title").empty().append("<h4 class=barchart-title>" + attrFormattedEnum[attr1] +"</h4>")
     var map = new Map(subBoroughHandler, attrEnum, yearEnum);
     var attrSelector = new AttributeSelector(map, attributeHandler);
     var barchart2 = new BarChart("q2", attrEnum, 2, true, true, attr1);
@@ -86,6 +86,7 @@
       // update barcharts
       if(subBorough.num === 1) {
         $(".y-axis-title2").text(subBorough.name)
+        $("#subBorough1-title").empty().append(subBorough.name)
         subBorough1 = subBorough;
         barchart2.subBoroughSelected(subBorough.data);
         if(attr2) {
@@ -94,6 +95,7 @@
       } else {
         subBorough2 = subBorough;
         $(".y-axis-title3").text(subBorough.name)
+        $("#subBorough2-title").empty().append(subBorough.name)
         barchart3.subBoroughSelected(subBorough.data);
         if(attr2) {
           barchart4.subBoroughSelected(subBorough.data);
@@ -123,7 +125,7 @@
       }
       let xDomain = getDomain(subBorough1.data, subBorough2.data, attr1)
       map.updateSelectedAttributes(selectedAttr);
-      $("#subBorough1-title").empty().append("<h4 class=barchart-title>" + attrFormattedEnum[attr] +"</h4>")
+      $("#attr1-title").empty().append("<h4 class=barchart-title>" + attrFormattedEnum[attr] +"</h4>")
 
       barchart2.attributeSelected(attr1, xDomain, subBorough1.data);
       barchart3.attributeSelected(attr1, xDomain, subBorough2.data);
@@ -137,7 +139,7 @@
       let xDomain = attr2 === -1 ? [0, 1] : getDomain(subBorough1.data, subBorough2.data, attr)
       // need to update map behavior so that it handles switch to "None"
       map.updateSelectedAttributes(selectedAttr);
-      $("#subBorough2-title").empty().append("<h4 class=barchart-title>" + attrFormattedEnum[attr] +"</h4>")
+      $("#attr2-title").empty().append("<h4 class=barchart-title>" + attrFormattedEnum[attr] +"</h4>")
 
       barchart1.attributeSelected(attr2, xDomain, subBorough1.data);
       barchart4.attributeSelected(attr2, xDomain, subBorough2.data);

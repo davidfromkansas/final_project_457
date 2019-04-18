@@ -3,6 +3,7 @@ html, body {
   max-width: 100%;
   overflow-x: hidden;
   padding-left: 2px;
+  padding-right: 2px;
 }
 
 #gentrificationIndicator{
@@ -27,6 +28,34 @@ h2 {
 	font-size: 24px;
 	margin-top: 10px;
 	/* margin-bottom: 30px; */
+}
+
+/* .header {
+  background-color: #F5F5F5;
+} */
+
+#exampleModalLabel {
+  color: #A9754F;
+}
+
+#process-book-link {
+  text-align: center;
+}
+
+#subBorough1-title {
+  color: #00A591;
+  fill: #00A591;
+  font-weight: bold;
+}
+
+#subBorough2-title {
+  color: #D2691E;
+  fill: #D2691E;
+  font-weight: bold;
+}
+
+.learn-more {
+  margin-top: 10px;
 }
 
 

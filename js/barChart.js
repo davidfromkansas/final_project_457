@@ -66,10 +66,17 @@ BarChart.prototype.initVis = function(){
   }
 
   if(vis.displayY) {
+		let id = "";
+		if(vis.quadrant === 2) {
+			id = "subBorough1-title"
+		} else if(vis.quadrant === 3) {
+			id = "subBorough2-title"
+		}
     vis.yAxis = d3.axisLeft()
   			.scale(vis.y);
 		vis.svg.append("text")
 			.attr("class", "y-axis-title"+vis.quadrant)
+			.attr("id", id)
 			.attr("transform", "rotate(-90)")
 			.attr("y", 0-vis.margin.left)
       .attr("x",0 - (vis.height / 2))

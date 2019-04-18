@@ -8,19 +8,42 @@
 </head>
 
 <body>
-  <h1>Understanding Gentrification in New York City</h1>
-  <p>It’s no debate that gentrification is transforming New York City everyday. The question, however, is whether or not
-    gentrification is hurting or improving the lives of the City’s 8 million inhabitants. This question has been the
-    source of endless debate as city officials try to decide on the best urban legislation for their constituents. To
-    add productive commentary to this debate, we aim to show the impact of gentrification based on different key metrics
-    that are indicators of gentrification. This project will serve to educate the common public
-    about gentrification and hopefully inspire others to understand the impact of gentrification in their own
-    communities.
-  </p>
-  <hr />
-
-  <h2><a id="gentrificationIndicator" href="proposal/proposal.html"> Our Process Book</a></h2>
-  <hr />
+  <div class="row header">
+    <div class="col-auto">
+      <h1>Understanding Gentrification in New York City</h1>
+    </div>
+    <div class="col">
+      <button type="button" class="btn btn-primary float-right learn-more" data-toggle="modal" data-target="#exampleModal">
+        Learn More
+      </button>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Our Project</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>It’s no debate that gentrification is transforming New York City everyday. The question, however, is whether or not
+              gentrification is hurting or improving the lives of the City’s 8 million inhabitants. This question has been the
+              source of endless debate as city officials try to decide on the best urban legislation for their constituents. To
+              add productive commentary to this debate, we aim to show the impact of gentrification based on different key metrics
+              that are indicators of gentrification. This project will serve to educate the common public
+              about gentrification and hopefully inspire others to understand the impact of gentrification in their own
+              communities.</p>
+              <h4 id="process-book-link"><a href="proposal/proposal.html"> Our Process Book</a></h4>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <h2><a id="gentrificationIndicator" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
       aria-controls="collapseExample">
@@ -80,9 +103,9 @@
   <div>
     <h2>Select Up to 2 Attributes to compare:</h2>
     <div class="row">
-      <div class="col-sm">
+      <div class="col-auto">
         <div class="dropdown">
-          <span><b>Attribute 1: </b></span>
+          <span><b>You are looking at </b></span>
           <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Median Household Income
@@ -95,11 +118,12 @@
             <a class="dropdown-item" name="population" value="5">Population</a>
             <a class="dropdown-item" name="racial_diversity_index" value="6">Racial Diversity Index</a>
           </div>
+          <span><b>in <span id="subBorough1-title"></span></b>, and...</span>
         </div>
       </div>
       <div class="col-sm">
         <div class="dropdown">
-          <span><b>Attribute 2: </b></span>
+          <span><b>You are looking at </b></span>
           <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             No Attribute Selected
@@ -113,19 +137,8 @@
             <a class="dropdown-item" name="population" value="5">Population</a>
             <a class="dropdown-item" name="racial_diversity_index" value="6">Racial Diversity Index</a>
           </div>
+          <span><b>in <span id="subBorough2-title"></span></b></span>
         </div>
-        <br />
-        <br />
-
-        <!-- <select class="dropdown">
-          <option name="none" value="0"></option>
-          <option name="housing_units" value="1">Housing Units</option>
-          <option name="mean_travel_time" value="2">Mean Travel Time</option>
-          <option name="median_household_income" value="3">Median Household Income</option>
-          <option name="median_rent" value="4">Median Rent</option>
-          <option name="population" value="5">Population</option>
-          <option name="racial_diversity_index" value="6">Racial Diversity Index</option>
-        </select></br> -->
       </div>
     </div>
   </div>
@@ -146,8 +159,8 @@
     </div>
     <div class="col" id="grid">
       <div class="row">
-        <div class="col" id="subBorough1-title"></div>
-        <div class="col" id="subBorough2-title"></div>
+        <div class="col" id="attr1-title"></div>
+        <div class="col" id="attr2-title"></div>
       </div>
       <div class="row">
         <div class="col" id="q2"></div>
